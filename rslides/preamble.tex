@@ -1,0 +1,43 @@
+%% preamble.tex by O Lindemann
+
+\setsansfont[BoldFont={Fira Sans SemiBold},
+             ItalicFont={Fira Sans Italic}]{Fira Sans Book}
+
+
+\metroset{progressbar=foot}
+\usepackage{xfrac}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{xcolor, colortbl}
+\usepackage{url}
+
+\setbeamercovered{invisible}
+
+% adapting metroplolis thema
+\setbeamertemplate{frame numbering}{\tiny %change size
+\insertframenumber/\inserttotalframenumber}
+
+
+\setbeamertemplate{itemize subitem}{\small\hbox{\donotcoloroutermaths$\circ$}}
+\setbeamertemplate{itemize subsubitem}{\small\hbox{\donotcoloroutermaths$\cdot$ }}
+
+
+\setbeamertemplate{frame footer}%
+%   {\vspace{-10pt}\tiny O. Lindemann, \emph{U Potsdam}}
+  {\tiny %\vspace{-10pt}\insertnavigation{0.75\paperwidth}
+  %\emph{O. Lindemann}
+  }
+
+
+\newcommand{\posfig}[3]{	% pos {(x,y)}{width}{filename}
+	\begin{textblock*}{#2}#1 \includegraphics[width=\textwidth]{#3}
+	\end{textblock*}}
+
+\newcommand{\authornote}[1]{\begin{flushright}\tiny\sl{}#1 \end{flushright}}
+\newcommand{\fns}{\footnotesize}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\bfred}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\dynamic}{\setbeamercovered{dynamic}}
+
+%% end preamble.tex
+
+
