@@ -378,7 +378,11 @@ The distribution of residuals at Baseline is approximately normal for both group
 
 **Answer 4E**
 
-The way to ignore the respondent with standardized residual $< -3$ on the second dependent variable is to choose the following select cases command:
+The way to ignore the respondent with standardized residual $< -3$ on the second dependent variable is to use the following select cases command. (Menu `Data|Select Cases`)
+
+```{r, echo=FALSE, fig.align="center",  out.width = '70%'}
+knitr::include_graphics(c("picts/spss4_screenshot1.png"))
+```
 
 Now, run the two-way mixed ANOVA again.
 

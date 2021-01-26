@@ -280,8 +280,10 @@ observed means.
 Short report: A one-way repeated measures ANOVA was conducted with time as
 within-subjects factor. The outcome variable was number of observed manifestations
 of cutting behavior. The effect of daily training was evaluated based on polynomial
-contrasts. A linear decreasing trend fitted the data (F(1,4) = 133.45 , p < .001, r =
-.99). This indicates a significant decrease of the cutting behavior over time.
+contrasts. A linear decreasing trend fitted the data, F(1,4) = 133.45 , p < .001, r =.97 ($r=\sqrt{\frac{F}{F+df_\text{error}}}$).
+
+
+This indicates a significant decrease of the cutting behavior over time.
 
 Since there was no control group we cannot conclude that the training caused this
 decrease. We would have to repeat this study with a control group to control for all

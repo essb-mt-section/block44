@@ -43,8 +43,8 @@ Test pair-wise differences between experimental conditions. Use the Games-Howell
 In the file '`Teach.sav`' are the results of an experiment by Andy Field on how different teaching methods affected students’ knowledge. The dependent variable is exam marks (percentage). The experimental conditions were 
 
 * ``punish'' (1; in this condition Andy hit students who performed poorly with a large cane), 
-* ``reward'' (3; in this condition Andy encouraged students and rewarded good students with candy), and 
 * ``indifferent'' (2; in this conditions students were neither punished nor rewarded). 
+* ``reward'' (3; in this condition Andy encouraged students and rewarded good students with candy), and 
 
 Two predictions were made: 
 
