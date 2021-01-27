@@ -237,7 +237,7 @@ knitr::include_graphics("picts/spss4_output6.png")
 
 Mean attitude seemed to be more liberal for higher levels of education. Averaged over the three educational levels, the attitude seemed to be slightly more conservative from time 1 to time 2, and then get more liberal again for time 3. (you would have to test whether this is significant)
 
-Considering the plot, the difference between high and medium education was larger at time 2 than at the other time points. Also, the difference between low and medium educated people was larger at time 1 than at the other time points. . (you would have to test whether this is significant)
+Considering the plot, the difference between high and medium education was larger at time 2 than at the other time points. Also, the difference between low and medium educated people was larger at time 1 than at the other time points\footnote{Actually, you would have to test whether this is indeed significant, but this is not required for this exercise.}. 
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '90%'}
 knitr::include_graphics("picts/spss4_output7.png")

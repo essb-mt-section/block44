@@ -7,7 +7,7 @@ output:
     latex_engine: lualatex
     theme: metropolis
     fonttheme: "structurebold"
-    keep_tex: true
+    keep_tex: false
     includes:
       in_header: preamble.tex
 classoption: "11pt, aspectratio=149" 
