@@ -304,7 +304,7 @@ The average score pattern is first increasing and then decreasing.
 
 **Answer 4B**
 
-The quadratic trend describes the average score pattern best, when you convert the F-values into effect sizes for both contrasts, you see that the effect size for the quadratic contrast is much larger than the effect size for the linear contrast (resp. $r = .97 vs r = .58$).
+The quadratic trend describes the average score pattern best, when you convert the F-values into effect sizes for both contrasts, you see that the effect size for the quadratic contrast is much larger than the effect size for the linear contrast (resp. $r = .97$ vs. $r = .58$).
 
 An interpretation of the quadratic contrast could be that students do improve over
 the year, but that at the end of the year test scores are lower because of end-of-the-

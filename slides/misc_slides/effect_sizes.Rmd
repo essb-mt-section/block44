@@ -1,0 +1,45 @@
+---
+title: ""
+subtitle: ""
+author: "Oliver Lindemann"
+institute: "Erasmus Univeristy Rotterdam"
+date: ""
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [styles/my-theme.css, styles/my-fonts.css ]
+    self_contained: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+
+---
+
+```{r echo=FALSE}
+library(knitr)
+vspace <- function(px) {
+  paste0("<p style='padding-top: ", px, "px;'></p>\n")
+}
+```
+
+class: gray-rows
+
+## Conventions for Interpreting Effect Sizes by Cohen (1988)
+
+`r vspace(50)`
+
+|               | $d$ | $R^2$ | $f^2$ | $\eta^2$ | $\omega^2$ | $r$ |
+| ------------- | --- | ----- | ----- | -------- | ---------- | --- |
+| small effect  | .20 | .01   | .02   | .01      | .01        | .10 |
+| medium effect | .50 | .06   | .15   | .06      | .06        | .30 |
+| large effect  | .80 | .15   | .35   | .14      | .15        | .50 |
+
+`r vspace(20)`
+
+
+\footnotesize 
+*Note*: There is only a convention for general $\eta^2$. For between subject designs, general and partial $\eta^2$ are identical. For within-subject designs, the values above are a bit too large for partial $\eta_\text{p}^2$.
+
+Cohen, J. (1988). *Statistical power analysis for the behavioral sciences* (2nd edition).

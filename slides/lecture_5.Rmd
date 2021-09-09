@@ -1,0 +1,39 @@
+---
+title: "Applied Multivariate Data Analysis"
+subtitle: "Lecture 5: XXX"
+author: Oliver Lindemann
+institute: "Erasmus Univeristy Rotterdam"
+date: "<small>Jan 2022</small>"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [styles/my-theme.css, styles/my-fonts.css ]
+    self_contained: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+
+---
+
+```{r echo=FALSE}
+library(knitr)
+vspace <- function(px) {
+  paste0("<p style='padding-top: ", px, "px;'></p>\n")
+}
+```
+
+
+# Example
+
+
+
+
+---
+class: middle, center, inverse
+
+# Any questions?
+
+
+

@@ -260,7 +260,7 @@ knitr::include_graphics("picts/spss4_output8.png")
 **Answer 2F**
 
 The post hoc tests showed that all  three pairwise differences between the difference
-ed-level groups are significant with p < .001. Thus even with a (Bonferroni correction for multiple testing differences would be significant). On average people with lower level of education tend to have more conservation opinions than people with medium educational level (mean difference $= 0.23$, $95\% CI=[0.11, 0.36], t(847) = 3.63, p < .001, r = .12$) and people with medium educational level are more conservative than people with higher educational level (mean difference $= 0.47$, $95\% CI=[0.32, 0.62], t(847) = 6.23, p < .001, r = .21$).
+ed-level groups are significant with p < .001. (Thus even with a Bonferroni correction for multiple testing differences would be significant). On average people with lower level of education tend to have more conservation opinions than people with medium educational level (mean difference $= 0.23$, $95\% CI=[0.11, 0.36], t(847) = 3.63, p < .001, r = .12$) and people with medium educational level are more conservative than people with higher educational level (mean difference $= 0.47$, $95\% CI=[0.32, 0.62], t(847) = 6.23, p < .001, r = .21$).
 
 \newpage
 
