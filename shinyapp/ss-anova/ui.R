@@ -4,18 +4,25 @@ source("formulars.R")
 
 plot_size = list(width = "500px", height="280px")
 
+eur_title <- function(title) {
+    rtn = paste0('<table style="background-color:#C6C7C9" width=100%>',
+                 '<tr><td valign="middle" style="padding-left: 10px;" >')
+    rtn = paste0(rtn, "<H1>", title, "</H1>")
+    rtn = paste0(rtn, '</td><td align="right" style="padding-right: 20px;">
+        <img src="./Logo-EUR-black.png" width="150" alt="Erasmus University">
+        <p><i><small>',
+                 '<a href="http://www.cognitive-psychology.eu/lindemann/">O. Lindemann</a>',
+                 '</small></i></p>
+        </td></tr></table>',
+                 '<br><br>')
+    return(HTML(rtn))
+}
+
+
 # Define UI for application that draws a histogram
 ui <- shinyUI(fluidPage(
 
-    HTML('<table width=100%><tr><td valign="top">
-           <H1>One-Way Between-Subject ANOVA</H1>
-           </td><td align="right">
-           <img src="./Logo-EUR-black.png" width="150" alt="Erasmus University">
-           <p><i><small><a href="http://www.cognitive-psychology.eu/lindemann/">
-                                O. Lindemann</a></small></i></p>
-           </td></tr></table>'),
-
-
+    eur_title("One-Way Between-Subject ANOVA"),
     fixedRow(
         column(5, wellPanel(
                 helpText("The table below contains fictive data from three groups",

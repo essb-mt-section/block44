@@ -6,7 +6,7 @@ source("manual_anova.R")
 
 DF = data.frame( Group_A = c(3,2,1,1,4),
                  Group_B   = c(5,2,4,2,3),
-                 Group_C        = c(7,4,5,3,6))
+                 Group_C   = c(7,4,5,3,6))
 text_size=14
 geom_size=4
 line_size = 1
