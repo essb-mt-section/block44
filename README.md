@@ -2,4 +2,4 @@
 
 Applied Multivariate Data Analysis
 
-Erasmus Univeristy Rotterdam
+Erasmus University Rotterdam
