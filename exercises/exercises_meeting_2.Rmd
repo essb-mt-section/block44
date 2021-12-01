@@ -19,9 +19,9 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2013) Chapter. 8
+Literature: Field (2018) Chapter. 9
 
-The chapter numbers refer to the 4th edition of book "Discovering statistics using IBM SPSS Statistics" by Field. If you use the **5th edition** of the textbook, you find the corresponding chapter numbers in this table:
+If you use the old 4th edition of the textbook, you find the corresponding chapter numbers in this table:
 
 | **4th** edition | **5th** edition           |
 | --------------- | ------------------------- |
@@ -29,12 +29,14 @@ The chapter numbers refer to the 4th edition of book "Discovering statistics usi
 
 \newpage
 
-# Chapter 8 (Field, 2013)
+# Chapter 9
 
 ## Regression
 
 **(1A)**
-The significance of regression coefficient in a regression model is tested with a t-test. How is the $t$ in SPSS output 8.3 below (Field, 2013, p. 319) calculated? Use the values in the table to see if you can get the same values as SPSS.
+Example: Imagine that I was interested in predicting physical and downloaded album sales (outcome: `record sales`) from the amount of money spent advertising that album (predictor: `advertising budget`).
+
+The significance of regression coefficient in a regression model is tested with a t-test. How is the $t$ in SPSS output below calculated? Use the values in the table to see if you can get the same values as SPSS.
 
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '70%'}
@@ -50,7 +52,7 @@ $$\text{record sales}_i = 134.14 + 0.096 \times \text{advertising budget}_i $$
 How many records would be sold in the first week after release if we spent 666000,- pounds on advertising?
 
 **(1C)**
-See the SPSS output 8.7 (Field 2013. p. 339) below for Model 2, where record sales are predicted from advertising budget, number of plays on the radio per week, and attractiveness of the band:
+See the SPSS output below for Model 2, where record sales are predicted from advertising budget, number of plays on the radio per week, and attractiveness of the band:
 
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '70%'}
@@ -63,7 +65,7 @@ Write down the regression equation for Model 2.
 Which factors are significant predictors of record sales?
 
 **(1E)**
-Think back to what the confidence interval of the mean represented (Field, 2013, section 2.5.2). Can you describe what the confidence intervals for the regression coefficients $b$ represent? What can you conclude about the accuracy of the estimated $b$’s?
+Think back to what the confidence interval of the mean represented. Can you describe what the confidence intervals for the regression coefficients $b$ represent? What can you conclude about the accuracy of the estimated $b$’s?
 
 **(1F)**
 Describe how you can test the null hypotheses concerning the regression coefficients $b$ with the 95% confidence intervals.
@@ -254,7 +256,7 @@ Explain what it means if the overall model test in a regression equation (i.e. t
 Why is a high power desirable?
 
 **(6C)**
-Determine with Figure 8.9 (Field, 2013, p. 314) what the minimum sample size must be, to achieve a power of .80, for a regression model test with **5 predictors and a medium expected effect size**.
+Determine with the figure below (Figure 9.9, Field, 2018) what the minimum sample size must be, to achieve a power of .80, for a regression model test with **5 predictors and a medium expected effect size**.
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '70%'}
 knitr::include_graphics("picts/meeting2_figure2.jpg")
@@ -276,7 +278,7 @@ What is the minimum sample size, to achieve a power of .80, for a regression mod
 
 **Answer 1A**
 
-Using the values from SPSS output 8.3 (Field, 2013, p. 319) to calculate $t$ for the constant ($b_0$):
+Using the values from SPSS output to calculate $t$ for the constant ($b_0$):
 
 \begin{align*}
 t &= \frac{b_\text{observed}-b_\text{expected}}{SE_b} \\
@@ -294,7 +296,7 @@ thousands.
 
 **Answer 1C**
 
-See the SPSS output 8.7 (Field 2013. p. 339) below for Model 2, where record sales are predicted from advertising
+See the SPSS output below for Model 2, where record sales are predicted from advertising
 budget, number of plays on the radio per week, and attractiveness of the band:
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '70%'}
@@ -550,7 +552,7 @@ Difficulty with determining the importance of predictors refers to the bouncing 
 
 **Answer 4F**
 
-If, for instance, two predictors are highly correlated, then omit one on theoretical grounds. If, for instance, a sets of predictors is highly inter-correlated, then consider combining the scores on these predictors into one or two “super” variables. A data analysis technique that can be used for this purpose is factor analysis (see $4^\text{th}$ edition Field (2013) chapter 17).
+If, for instance, two predictors are highly correlated, then omit one on theoretical grounds. If, for instance, a sets of predictors is highly inter-correlated, then consider combining the scores on these predictors into one or two “super” variables. A data analysis technique that can be used for this purpose is factor analysis (see Field chapter on factor analysis).
 
 
 **Answer 4G**
