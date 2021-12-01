@@ -6,5 +6,6 @@
 *.pdf
 rsconnect/
 *.dcf
+*.zip
 libs/
 .vscode/
