@@ -21,7 +21,7 @@ output:
 
 Literature: Field (2018) Chapter. 9
 
-If you use the old 4th edition of the textbook, you find the corresponding chapter numbers in this table:
+If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
 
 | **4th** edition | **5th** edition           |
 | --------------- | ------------------------- |

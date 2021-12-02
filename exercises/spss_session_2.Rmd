@@ -204,7 +204,7 @@ Please CLOSE SPSS and start again.
 
 
 
-## Tasks 1 [Field (2013), Ch. 10] {-}
+## Tasks 1 {-}
 
 \textsl{McNulty et al. (2008) found a relationship between a person’s `Attractiveness` and how much `Support` they give their partner in newlyweds, where supposedly attractiveness is a predictor of support. Is this relationship moderated by gender (i.e., whether the data were from the husband or wife)? include a scatterplot with `Attractiveness` on the x-axis and `Support` on the y-axis, and use different markers (set markers by) for gender. In the Chart Editor, ask for separate regression lines for the groups. Interpret this graph. The data are in `McNulty et al. (2008).sav`.}
 
@@ -218,7 +218,7 @@ If you click on [*Options*] another dialog box will appear containing four usefu
 
 Talking of simple slopes analysis, if you click on [*Conditioning*], you can change whether you want simple slopes at ±1 standard deviation of the mean of the moderator (the default, which is fine) or at percentile points (it uses the 10th, 25th, 50th, 75th and 90th percentiles). Back in the main dialog box, click [*OK*] to run the analysis.
 
-## Tasks 4 & 5 [Field (2013), Ch. 10] {-}
+## Tasks 4 & 5  {-}
 
 \textsl{Test whether the effect of pornography consumption (in this case `LnConsumption`)  on infidelity (number of `hook-ups`) is mediated by relationship `commitment`. Use the `PROCESS` tool to compute the parameters of the mediation model printed below, and estimate the indirect effect and its (Bias Corrected = default) 95\% confidence interval. The data are in `Lambert et al. (2012).sav`.}
 

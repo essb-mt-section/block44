@@ -20,7 +20,7 @@ output:
 
 Literature: Field (5th ed, 2018) Chapter. 2 & 3, Simmons, Nelson, & Simonsohn (2011)
 
-If you use the old 4th edition of the textbook, you find the corresponding chapter numbers in this table:
+If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
 
 | **4th** edition        | **5th** edition                     |
 | ---------------------- | ----------------------------------- |

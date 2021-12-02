@@ -18,9 +18,9 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2013), Chapter 14: repeated measures ANOVA (completely within designs), Chapter 10 (section 10.2.11.4, 10.2.11.5: contrasts and trend analysis)
+Literature: Field (2018), Chapter 15: repeated measures ANOVA (completely within designs), Chapter 11
 
-The chapter numbers refer to the 4th edition of book "Discovering statistics using IBM SPSS Statistics" by Field. If you use the **5th edition** of the textbook, you find the corresponding chapter numbers in this table:
+If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
 
 | **4th** edition | **5th** edition |
 | --------------- | --------------- |
@@ -30,7 +30,7 @@ The chapter numbers refer to the 4th edition of book "Discovering statistics usi
 
 \newpage
 
-# Chapter 14  (Field, 2013)
+# Chapter 15
 
 ## Within-subject designs
 
@@ -113,7 +113,7 @@ knitr::include_graphics("picts/meeting7_spssout1.jpg")
 ```
 
 **(3D)**
-Write a “short report” (see Field p. 587) based on the information above. Also compute the effect size for the contrast (see Field p. 586).
+Write a “short report” based on the information above. Also compute the effect size for the contrast.
 
 **(3E)**
 Suppose the final moment of testing did not take place on day 4, but on day 7. Would the linear contrasts still be correct?
@@ -136,7 +136,7 @@ Describe the score pattern in the figure above.
 Which of both trends (defined by the contrasts in the above table) fits the data best? Try to give an explanation for the pattern of mean scores from the information about this study.
 
 **(4C)**
-Write a “short report” (see Field p. 587) based on the information above. Also compute the effect size for the contrast (see Field p. 586).
+Write a “short report” based on the information above. Also compute the effect size for the contrast.
 
 **(4D)**
 Given the figure above, can you tell whether the pattern of the mean scores also represents the individual score patterns? What information would you need to be able to judge the individual score patterns?
@@ -164,7 +164,7 @@ Finally, the participants are in all conditions, thus participant characteristic
 
 **Answer 1C**
 
-The internal validity of within-subject designs can be threatened by practice effects, and boredom effects (see Field, 2009 p. 17; 2013, p.18). The demand characteristics should not be too high (not to many different conditions). The order of the conditions that participants are subjected to should be randomized, so that the carry-over effects can be averaged out per condition. Randomization of the order of the conditions is called counterbalancing.
+The internal validity of within-subject designs can be threatened by practice effects, and boredom effects. The demand characteristics should not be too high (not to many different conditions). The order of the conditions that participants are subjected to should be randomized, so that the carry-over effects can be averaged out per condition. Randomization of the order of the conditions is called counterbalancing.
 
 
 **Answer 1D**
@@ -193,10 +193,7 @@ on the type of test item?
 
 For significant main effects for factors with more than two levels we can conduct either Post Hoc pairwise comparison tests (in SPSS: compare main effects) or  planned contrasts.
 
-For a significant interaction effect, we can use within subjects contrasts to compare the difference between two levels of one factor for two levels of the other factor (e.g., is the difference between pre- and post test the same for division items and multiplication items?) See also Field (2009), p. 498-499 or Field (2013), p. 582-583. Furthermore, we can test the difference between two levels of one factor within each
-level of the other factor (e.g. is the difference between pre- and post test significant
-when we take only division items into account?). This type of analysis is called
-simple effects analysis.
+For a significant interaction effect, we can use within subjects contrasts to compare the difference between two levels of one factor for two levels of the other factor (e.g., is the difference between pre- and post test the same for division items and multiplication items?). Furthermore, we can test the difference between two levels of one factor within each level of the other factor (e.g. is the difference between pre- and post test significant when we take only division items into account?). This type of analysis is called simple effects analysis.
 
 
 
@@ -233,7 +230,7 @@ violations of this assumption).
 
 **Answer 2E**
 
-Huyn-Feldt, Greenhouse-Geisser and the lower bound. Sphericity can be tested with Mauchly’s test, but during this course we always stress not to rely solely on $p$-values, but also to take into account the effect size and data exploration. I follow the rules of thumb presented in Field (2013), which I think apply regardless of Mauchly’s test:
+Huyn-Feldt, Greenhouse-Geisser and the lower bound. Sphericity can be tested with Mauchly’s test, but during this course we always stress not to rely solely on $p$-values, but also to take into account the effect size and data exploration. I follow the rules of thumb presented in Field, which I think apply regardless of Mauchly’s test:
 
 1. Epsilon close to 1 (or when in fact the corrected df’s are very close to the uncorrected $df$’s. resulting in all corrections producing the same $p$- values): \newline $\rightarrow$ **Uncorrected F (sphericity assumed)**
 2. Mild departure from Sphericity: $.75 < \text{GG epsilon} < .95$: \newline $\rightarrow$ **Huynh-Feldt (HF) corrected $F$-test**

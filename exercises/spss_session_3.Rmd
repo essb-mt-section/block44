@@ -40,7 +40,7 @@ Test pair-wise differences between experimental conditions. Use the Games-Howell
 
 # One-way ANOVA with Contrast tests
 
-In the file '`Teach.sav`' are the results of an experiment by Andy Field on how different teaching methods affected students’ knowledge. The dependent variable is exam marks (percentage). The experimental conditions were 
+In the file '`Teach.sav`' are the results of an experiment by Field on how different teaching methods affected students’ knowledge. The dependent variable is exam marks (percentage). The experimental conditions were 
 
 * ``punish'' (1; in this condition Andy hit students who performed poorly with a large cane), 
 * ``indifferent'' (2; in this conditions students were neither punished nor rewarded). 
@@ -55,7 +55,7 @@ Two predictions were made:
 Conduct an analysis to investigate the effect of teaching methods on students’ knowledge. Check the homogeneity assumption in the Output.
 
 **(2B)**
-Repeat the analysis but now select the appropriate set of contrasts that test two predictions (use the table in Field, p. 456). Don’t forget to click “change” in the contrast menu. Interpret the results.
+Repeat the analysis but now select the appropriate set of contrasts that test two predictions (use the table "Standard contrasts available in SPSS" in Field). Don’t forget to click “change” in the contrast menu. Interpret the results.
 
 
 # ANCOVA
@@ -137,7 +137,7 @@ What does this imply for the assumption of homogeneity of regression?
 
 # Factorial ANOVA
 
-**Field (2013), Chapter 13, Task 1**
+**Example 1**
 
 \textsl{People’s musical tastes tend to change as they get older. My parents, for example, after years of listening to relatively cool music when I was a kid, subsequently hit their mid-forties and developed a worrying obsession with country and western music. This possibility worries me immensely because the future seems incredibly bleak if it is spent listening to Garth Brooks and thinking ‘oh boy, did I underestimate Garth’s immense talent when I was in my twenties’. So, I thought I’d do some research. I took two groups (`age`): young people (I arbitrarily decided that ‘young’ meant under 40 years of age) and older people (above 40 years of age). There were 45 people in each group, and I split each group into three smaller groups of 15 and assigned them to listen to Fugazi, ABBA or Barf Grooks (`music`). I got each person to rate it (`liking`) on a scale ranging from -100 (I hate this foul music) through 0 (I am completely indifferent) to +100 (I love this music so much I’m going to explode). The data are in the file `Fugazi.sav`, conduct a two-way independent ANOVA on them.}
 
@@ -149,7 +149,7 @@ knitr::include_graphics("picts/spss3_1.jpg")
 ```
 
 
-**Field (2013), Chapter 13, Task 9**
+**Example 2**
 
 \textsl{There are reports of increases in injuries related to playing Nintendo Wii} ([see http://ow.ly/ceWPj](http://ow.ly/ceWPj)). \textsl{These injuries were attributed mainly to muscle and tendon strains. A researcher hypothesized that a stretching warm-up before playing Wii would help lower injuries, and that athletes would be less susceptible to injuries because their regular activity makes them more flexible. She took 60 athletes and 60 non athletes (`Athlete`), half of them played Wii and half watched others playing as a control (`Wii`), and within these groups half did a 5-minute stretch routine before playing/watching whereas the other half did not (`Stretch`). The outcome was a pain score out of 10 (where 0 is no pain, and 10 is severe pain) after playing for 4 hours (`Injury`). The data are in the file '`Wii.sav`'. Conduct a three-way ANOVA to test whether athletes are less prone to injury, and whether the prevention programme worked.}
 
@@ -187,7 +187,7 @@ knitr::include_graphics("picts/spss3_output1.png")
 
 Concerning violation of the homogeneity of variance assumption, you should know the following:
 
-The variances of the residuals of all groups are compared statistically with Levene’s test. When this test results in $p < .05$ this means that the error variances are statistically not equal among the different groups. Criticism: the test is (dependent on the a.o. the sample size) sensitive to type I and type II errors.  Alternatively you could compute the variance ratio (see Field, 2013, p. 193, a crude rule of thumb is that the largest variance may be (at most) twice the size of the smallest variance. Rule of thumb for dealing with heterogeneous variances: if you have equal group and normally distributed errors a violation of this assumption does not invalidate the statistical tests.
+The variances of the residuals of all groups are compared statistically with Levene’s test. When this test results in $p < .05$ this means that the error variances are statistically not equal among the different groups. Criticism: the test is (dependent on the a.o. the sample size) sensitive to type I and type II errors.  Alternatively you could compute the variance ratio (see Field). A crude rule of thumb is that the largest variance may be (at most) twice the size of the smallest variance. Rule of thumb for dealing with heterogeneous variances: if you have equal group and normally distributed errors a violation of this assumption does not invalidate the statistical tests.
 
 Otherwise you could bootstrap the AN(C)OVA results and report BCa 95\% CIs for the pairwise comparisons, instead of the CIs below that are based on the assumption that the t-distribution applies.
 

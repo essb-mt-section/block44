@@ -17,9 +17,9 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2013) Chapters 12, 13
+Literature: Field (2018) Chapters 13 & 14
 
-The chapter numbers refer to the 4th edition of book "Discovering statistics using IBM SPSS Statistics" by Field. If you use the **5th edition** of the textbook, you find the corresponding chapter numbers in this table:
+If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
 
 | **4th** edition | **5th** edition           |
 | --------------- | ------------------------- |
@@ -28,16 +28,16 @@ The chapter numbers refer to the 4th edition of book "Discovering statistics usi
 
 \newpage
 
-# Chapter 12  (Field, 2013)
+# Chapter 13
 
 
-## Smart Alex’s tasks: ANCOVA
+## ANCOVA
 
-Below you find the SPSS output for Task 3 in Field (2013), p. 505; an ANCOVA for the Hangover ``Cure.sav'' data.
-
-“A marketing manager for a certain well-known drinks manufacturer was interested in the therapeutic benefit of certain soft drinks for curing hangovers. He took 15 people out on the town one night and got them drunk. The next morning as they awoke, dehydrated and feeling as though they’d licked a camel’s sandy feet clean with their tongue, he gave five of them water to drink, five of them Lucozade, and the remaining five a leading brand of cola (this variable is called drink). He then measured how well they felt (on a scale from 0 = I feel like death to 10 = I feel really full of beans and healthy) two hours later (this variable is called well). He wanted to know which drink produced the greatest level of wellness.
+Example: “A marketing manager for a certain well-known drinks manufacturer was interested in the therapeutic benefit of certain soft drinks for curing hangovers. He took 15 people out on the town one night and got them drunk. The next morning as they awoke, dehydrated and feeling as though they’d licked a camel’s sandy feet clean with their tongue, he gave five of them water to drink, five of them Lucozade, and the remaining five a leading brand of cola (this variable is called drink). He then measured how well they felt (on a scale from 0 = I feel like death to 10 = I feel really full of beans and healthy) two hours later (this variable is called well). He wanted to know which drink produced the greatest level of wellness.
 
 However, he realized that it was important to control for how drunk the person got the night before, and so he measured this on a scale of 0 = as sober as a nun to 10 = flapping about like a haddock out of water on the floor in a puddle of their own vomit (this variable is called drunk).”
+
+Below you find the SPSS output for this task, that is, the ANCOVA for the Hangover dataset ``Cure.sav''.
 
 Preliminary analysis:
 
@@ -79,12 +79,12 @@ Look at the table with planned contrast tests “Custom hypothesis tests”. Whi
 Compute for each contrast the $t$-value and the $r$-effect*.
 
 **(1I)**
-Report on the contrast tests according to the example of Field, p. 417 bottom.
+Report (using APA norms) on the contrast tests of this example by Field.
 
 $$r_\text{contrast} = \sqrt{\frac{t^2}{t^2+ df}}$$
 
 
-# Chapter 13 (Field, 2013)
+# Chapter 14
 
 ## Two-way ANOVA
 
@@ -141,7 +141,7 @@ Which effects are significant with $\alpha = .05$?
 
 ## Two-way ANOVA simple effects analysis
 
-For the data in the previous exercise a simple effects analysis was done with the SPSS syntax (see for an explanation of a similar syntax command Field (2013, p. 531):
+For the data in the previous exercise a simple effects analysis was done with the SPSS syntax (see for an explanation of a similar syntax command:
 
 ```{r, eval=FALSE}
   GLM fear_of_failure by judgement task_level
@@ -198,7 +198,7 @@ knitr::include_graphics("picts/meeting6_interactions.jpg")
 \newpage\appendix
 # Answers
 
-## Smart Alex’s tasks: ANCOVA
+## ANCOVA
 
 
 **Answer 1A**
@@ -439,7 +439,7 @@ knitr::include_graphics("picts/meeting6_solution4.jpg")
 
 Error bars charts show the Group means with their 95% confidence interval.
 
-From Cumming and Finch (2005) we adopt the following three guidelines for the relationship between CIs and null hypothesis significance testing (see Field, 2013, p.71-72):
+From Cumming and Finch (2005) we adopt the following three guidelines for the relationship between CIs and null hypothesis significance testing:
 
 1. 95% CIs that just about touch end-to-end represent a p-value for testing $H_0: \mu_1 = \mu_2$ of approximately .01.
 2. If there is a gap between the upper limit of one 95% CI and the lower limit of another then $p < .01$.

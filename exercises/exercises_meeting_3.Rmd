@@ -17,10 +17,10 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field par. 7.5 (part and partial correlations) + Chapter 8
+Literature: Field, Chapter 8 & 9
 
+If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
 
-The chapter numbers refer to the 4th edition of book "Discovering statistics using IBM SPSS Statistics" by Field. If you use the **5th edition** of the textbook, you find the corresponding chapter numbers in this table:
 
 | **4th** edition | **5th** edition           |
 | --------------- | ------------------------- |
@@ -29,7 +29,7 @@ The chapter numbers refer to the 4th edition of book "Discovering statistics usi
 
 \newpage
 
-# Chapter 8 (Field, 2013)
+# Chapter 8 & 9
 
 ## Hierarchical regression
 
@@ -130,8 +130,6 @@ Based on the $R^2_\text{change}$ resulting from model 3, what can be concluded a
 
 ## Explained variance in regression
 
-*see  Chapter 7.5 & Chapter 8 (Field, 2013)*
-
 Consider the following correlations:
 
 |     | $Y$ | $X1$ | $X2$ | $X3$ |
@@ -222,7 +220,7 @@ In this exercise we are looking at the explained variance of the criterion $Y$ b
 
 A way to display explained variance in multiple regresion analysis is by drawing a **Venn-diagram**, where each variable is depicted with a circle and the proportion explained variance is displayed by the amount of overlap between two circles. The total amount of explained variance of the criterion $Y$ can be read off the Venn-diagram by looking at the part of the circle of $Y$ that overlaps with the predictors.
 
-Now, draw two Venn diagrams (Like in Field, 2013, p. 282, you may use overlapping squares or circles to show the principle of shared variation):
+Now, draw two Venn diagrams:
 
 1. Depicting the relations between Y, X1, and X2; and
 2. Depicting the relations between Y, X1, and X3.
