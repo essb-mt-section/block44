@@ -155,25 +155,49 @@ The 95% CI is an interval constructed such that in 95% of samples the true value
 
 First we need to calculate the standard error
 $$\sigma_{\overline{X}}=\frac{s}{\sqrt{N}}=\frac{61.27}{\sqrt{11}}=18.47$$
-To compute the margin of error for the mean, we need to find the appropriate value of $t$. To do so, we calulate the degrees of freedom $df=N-1$. With 11 data points the degrees of freedom is $df=10$. For a 95% confidence interval, we look up the value in the column labbeled ``Two-Tailed Test'', '0.05' in the table of the critical values of the $t$-distribution (see the Appendix of the Field book). The corresponding value is $t=2.23$
+
+*Shall we use $z$-values or $t$-values to compute CI?*
+
+* If we have a **large sample size**, we know from the central limit theorem that sampling distributions will be normally distributed. In this case we use simply the $z_{1-p \over 2} = z_{0.025} = \pm 1.96$.
+* If we have a **small sample size**, we are not sure about normality and are more conservative. That is, we use instead $t_{n-1}$.
+
+But what is small and what is large? Unfortunately, different textbooks make here different suggestions. E.g Field $5^{th}$ edition says that sample sizes larger 30 can be considered as large. Other textbooks or older Field editions use here different cutoff criteria, e.g. larger 60. 
+
+With $n=11$, it's clearly a small sample size and we use $t$-values. To compute the margin of error for the mean, we need to find the appropriate value of $t$. To do so, we calulate the degrees of freedom $df=N-1$. With 11 data points the degrees of freedom is $df=10$. For a 95% confidence interval, we look up the value in the column labbeled ``Two-Tailed Test'', '0.05' in the table of the critical values of the $t$-distribution (see the Appendix of the Field book). The corresponding value is $t=2.23$
 
 The confidence intervals ($CI$) are therefore:
 
-* Lower Bounder of the $CI = \overline{X}- (2.23 \times SE) = 96.64-(2.23\times 18.47) = 55.63$
-* Upper Bounder of the $CI = \overline{X}+ (2.23 \times SE) = 96.64+(2.23\times 18.47) = 137.65$
+* Lower bounder of the $CI = \overline{X}- (2.23 \times SE) = 96.64-(2.23\times 18.47) = 55.45$\footnote{Please note, your results might not be exactly the same. The results in the 
+exercises might deviate slightly ($\pm0.2$) due to differences in the rounding and the precision of the underlying calculations.}
+
+* Upper bounder of the $CI = \overline{X}+ (2.23 \times SE) = 96.64+(2.23\times 18.47) = 137.83$
+
+
+\newpage 
 
 **Answer  1B**
 
 The new standard error is
 $$\sigma_{\overline{X}}=\frac{s}{\sqrt{N}}=\frac{61.27}{\sqrt{56}}=8.19$$
-The appropriate value for $t$ with $df = N-1= 55$ cannot be read directly from the $t$-table in Field. You can use the conservative approximation by choosing $t(50) = 2.01$
 
-The 95% CI for $N =56$ is:
+Based on different suggestions, you might use $z$- or $t$-values (see above).
 
-* Lower Bounder of the $CI = \overline{X}- (2.01 \times SE) = 96.64-(2.01\times 8.19) = 80.18$
-* Upper Bounder of the $CI = \overline{X}+ (2.01 \times SE) = 96.64+(2.01\times 8.19) = 113.10$
+**If you decide to use $t$-values**, the appropriate value for $t$ with $df = N-1= 55$ can be read directly from the $t$-table in Field: $t(55) = 2.004 \approx 2.00$. If your $t$-table does not comprise a $t$-value for $df=55$ (e.g. older Field edition), you should use the conservative approximation of $t(50) = 2.01$.
+
+The 95% CI for $N =56$ is: $$CI = \overline{X} \pm t(55) \times SE$$
+
+* Lower bounder of the $CI = 96.64-(2.00\times 8.19) = 80.26$
+* Upper bounder of the $CI = 96.64+(2.00\times 8.19) = 113.02$
+
+**If you decide to use $z$-values**, as suggested in Field's $5^{th}$ edition, the 95% CI is:
+$$CI = \overline{X} \pm z_{0.025}  \times SE$$
+
+* Lower bounder of the $CI =  96.64-(1.96\times 8.19) = 80.58$
+* Upper bounder of the $CI =  96.64+(1.96\times 8.19) = 112.69$
+
 
 *Note*: The 95% CI of the mean is the smallest for $N =56$. That is, the “margin of error” ($t(df) \times SE$) of the mean is smaller in larger samples. This means that larger samples produce more reliable estimates of the population mean. That is, estimates in larger samples will show less variability across samples than estimates in smaller samples.
+
 
 
 **Answer  1C**
@@ -195,17 +219,16 @@ Case 2
 
 We are usually interested in populations, but because we cannot collect data from every human being in the population, we collect data from a small subset of the population (known as a sample) and use these data to infer things about the population as a whole.
 
-
+\newpage
 **Answer  1E**
 
 The mean is a simple statistical model of the center of a distribution of scores. A hypothetical estimate of the ‘typical’ score. We use the variance, or standard deviation, to tell us how accurately the mean represents our data. The standard deviation is a measure of how much error there is associated with the mean: the smaller the standard deviation, the more accurately the mean represents the data.
 
 
+
 **Answer  1F**
 
 The standard deviation tells us how much observations in our sample differ from the mean value within our sample. The standard error tells us not about how the sample mean represents the sample itself, but how well the sample mean represents the population mean. The standard error is the standard deviation of the sampling distribution of a statistic. For a given statistic (e.g. the mean) it tells us how much variability there is in this statistic across samples from the same population. Large values, therefore, indicate that a statistic from a given sample may not be an accurate reflection of the population from which the sample came.
-
-\newpage
 
 **Answer  1G**
 
@@ -235,8 +258,6 @@ All of these measures tell us something about how well the mean fits the observe
 
 A test statistic is a statistic for which we know how frequently different values occur. The observed value of such a statistic is typically used to test hypotheses, or to establish whether a model is a reasonable representation of what’s happening in the population.
 
-
-\newpage
 
 **Answer  1J**
 
