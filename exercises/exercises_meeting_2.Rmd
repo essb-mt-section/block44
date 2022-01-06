@@ -71,7 +71,7 @@ Think back to what the confidence interval of the mean represented. Can you desc
 Describe how you can test the null hypotheses concerning the regression coefficients $b$ with the 95% confidence intervals.
 
 **(1G)**
-Describe the difference between the unstandardized regression coefficients ($b$-values) and the standardized regression coefficients (beta-values)
+Describe the difference between the unstandardized regression coefficients ($b$-values) and the standardized regression coefficients (beta-values).
 
 **(1H)**
 Name an advantage and a disadvantage of reporting the beta-values instead of the $b$-values.

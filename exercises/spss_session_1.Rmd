@@ -257,7 +257,12 @@ By using the “SAVE” option a new variable (`PRE_1`) is created in the data-e
 \newpage
 **Answer 1G**
 
-The predicted values are a linear combination of the independent variable, and are thus perfectly correlated with this variable. The predicted values lie on a straight line, that is, the regression line. The observed (body mass) values are scattered around this line. The closer the observed values are to the line the better the prediction.
+When you have regression analysis with only one predictor. You have a formula like:
+$Y_\text{predicted} = b_0 + b_1\,X$
+
+The predicted values are thus a so-called *linear transformation* of the predictor variable. Any linear transformation of a variable will be perfectly correlated with the original variable.
+
+Do not let this technical nice to know fact distract you from the main message of this exercise: The conclusion is that your regression model predicts scores that are on a straight line, while "real data" are scattered around this line and therefore there will be prediction errors (residuals).
 
 
 
@@ -287,6 +292,8 @@ Graphically, explore the univariate (histograms) and bivariate (scatterplots) di
 
 
 
+\newpage
+
 ## Regression analysis: checking assumptions concerning residuals
 
 **Answer 3A & 3B**
@@ -300,7 +307,6 @@ $weight = -51.33 + 66.63\times height$
 65.27
 
 
-\newpage
 
 **Answer 3E**
 
@@ -325,7 +331,7 @@ If the correlation would be $r=1$, all residuals would be zero and all dots of t
 
 
 
-
+\newpage
 ## Multiple regression & reporting results
 
 
@@ -333,7 +339,7 @@ If the correlation would be $r=1$, all residuals would be zero and all dots of t
 
 These so-called matrix plot are not the pretties scatterplots. They are not very detailed. However they are useful to detect any serious violations of linearity and also to detect outliers. It is a “quick and dirty” way to scan for possible violations of the assumptions underlying regression analysis when one has several predictors. In the current analysis there are no serious violations of the assumptions, but we can see an outlier in the relation between the `SAT` variables and `HSM`, which we could inspect further to see if it biases our regression equation (later in the course we will discuss casewise diagnostics that are suited for this purpose).
 
-\newpage
+
 **Answer 4C**
 
 All predictors, except `SATverbal` are significantly correlated with `GPA`. `HSmath` has the highest correlation with `GPA` and thus is the most important predictor given this set of predictors. 
