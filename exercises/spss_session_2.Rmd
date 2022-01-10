@@ -424,19 +424,19 @@ Smart Alex’s Solutions (adapted from Field: [http://www.sagepub.com/field4e/st
 
 ### Task 1 {-}
 
-To access the PROCESS dialog box in (see below) select [Analyze Regression $\rightarrow$ PROCESS]. The variables in your data file will be listed in the box labelled *Data File Variables*. Select the outcome variable (in this case `Support`) and drag it to the box labelled *Outcome Variable (Y)*, or click on $[\rightarrow]$. Similarly, select the predictor variable (in this case `Attractiveness`) and drag it to the box labelled *Independent Variable (X)*. Finally, select the moderator variable (in this case `Gender`) and drag it to the box labelled *M Variable(s)*, or click on $[\rightarrow]$. This box is where you specify any moderators (you can have more than one).
+To access the PROCESS dialog box in (see below) select [Analyze Regression $\rightarrow$ PROCESS]. The variables in your data file will be listed in the box labelled *Data File Variables*. Select the outcome variable (in this case `Support`) and drag it to the box labelled *Y variable*, or click on $[\rightarrow]$. Similarly, select the predictor variable (in this case `Attractiveness`) and drag it to the box labelled *X variable*. Finally, select the moderator variable (in this case `Gender`) and drag it to the box labelled *Moderator variable W*, or click on $[\rightarrow]$. This box is where you specify your moderator (you can have more than one, the second moderator can be put in the box labelled *Moderator variable Z*).
 
 
-PROCESS can test 74 different types of model, and these models are listed in the drop-down box labelled `Model Number`. Simple moderation analysis is represented by model 1, but the default model is 4 (mediation, which we’ll look at next). Therefore, activate this drop-down list and select $[1]$ . The rest of the options in this dialog box are for models other than simple moderation, so we’ll ignore them.
+PROCESS can test 74 different types of model, and these models are listed in the drop-down box labelled `Model Number`. Simple moderation analysis is represented by model 1, but the default model is 4 in some versions of PROCESS (4 = mediation, which we’ll look at next). Therefore, activate this drop-down list and select $[1]$ if necessary. The rest of the options in this dialog box are for models other than simple moderation, so we’ll ignore them.
 
-If you click on [Options] another dialog box will appear containing four useful options for moderation. Selecting 
+If you click on [Options] another dialog box will appear containing four useful options for moderation. Select: 
 
 1. Mean center for products centres the predictor and moderator for you; 
-2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model; 
-3. OLS/ML confidence intervals produces confidence intervals for the model, and I’ve tried to emphasize the importance of these throughout the book; and 
+2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model (select option HC3 for this analysis); 
+3. OLS/ML confidence intervals produces confidence intervals for the model (in newer versions of PROCESS, confidence intervals are given by default and you will not have an option to select them), and I’ve tried to emphasize the importance of these throughout the book; and 
 4. Generate data for plotting is helpful for interpreting and visualizing the simple slopes analysis. 
 
-Talking of simple slopes analysis, if you click on [Conditioning], you can change whether you want simple slopes at $\pm 1$ standard deviation of the mean of the moderator (the default, which is fine) or at percentile points (it uses the 10th, 25th, 50th, 75th and 90th percentiles). Back in the main dialog box, click [OK] to run the analysis.
+Talking of simple slopes analysis, under [Conditioning], you can change whether you want simple slopes at $\pm 1$ standard deviation of the mean of the moderator (the default, which is fine) or at percentile points (it uses the 10th, 25th, 50th, 75th and 90th percentiles). Back in the main dialog box, click [OK] to run the analysis.
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '50%'}
 knitr::include_graphics("picts/spss2_4.png")
@@ -534,11 +534,11 @@ knitr::include_graphics("picts/spss2_6.png")
 ```
 
 
-To access the dialog box shown below select [Analyze Regression $\rightarrow$ PROCESS]. The variables in your data file will be listed in the box labelled *Data File Variables*. Select the outcome variable (in this case `Hook_Ups`) and drag it to the box labelled *Outcome Variable (Y)*, or click on $[\rightarrow]$. Similarly, select the predictor variable (in this case `LnConsumption`) and drag it to the box labelled *Independent Variable (X)*. Finally, select the mediator variable (in this case `Commitment`) and drag it to the box labelled *M Variable(s)*, or click on $[\rightarrow]$. This box is where you specify any mediators (you can have more than one).
+To access the dialog box shown below select [Analyze Regression $\rightarrow$ PROCESS]. The variables in your data file will be listed in the box labelled *Data File Variables*. Select the outcome variable (in this case `Hook_Ups`) and drag it to the box labelled *Y variable*, or click on $[\rightarrow]$. Similarly, select the predictor variable (in this case `LnConsumption`) and drag it to the box labelled *X variable*. Finally, select the mediator variable (in this case `Commitment`) and drag it to the box labelled *Mediator(s) M*, or click on $[\rightarrow]$. This box is where you specify any mediators (you can have more than one).
 
-As I mentioned before, PROCESS can test many different types of model, and simple mediation analysis is represented by model 4 (this model is selected by default). Therefore, make sure that $[4]$ is selected in the drop-down list under *Model Number*. Unlike moderation, there are other options in this dialog box that are useful: for example, to test the indirect effects we will use bootstrapping to generate a confidence interval around the indirect effect. By default PROCESS uses 1000 bootstrap samples, and will compute bias corrected and accelerated confidence intervals. These default options are fine, but just be aware that you can ask for percentile bootstrap confidence intervals instead.
+As I mentioned before, PROCESS can test many different types of models, and simple mediation analysis is represented by model 4. Therefore, make sure that $[4]$ is selected in the drop-down list under *Model Number*. Unlike moderation, there are other options in this dialog box that are useful: for example, to test the indirect effects we will use bootstrapping to generate a confidence interval around the indirect effect. By default PROCESS uses 5000 bootstrap samples, and will compute bias corrected and accelerated confidence intervals. These default options are fine, but just be aware that you can ask for percentile bootstrap confidence intervals instead.
 
-If you click on [Options] another dialog box will appear containing four useful options for mediation. Selecting (1) *Effect Size* produces the estimates of the size of the indirect effect; (2) *Sobel Test* produces a significance test of the indirect effect devised by Sobel; (3) Total effect model produces the direct effect of the predictor on the outcome (in this case the regression of infidelity predicted from pornography consumption). None of the options activated by clicking on [Conditioning] apply to simple mediation models, so we can ignore this button and click [OK] to run the analysis.
+If you click on [Options] another dialog box will appear containing four useful options for mediation. Selecting (1) *Effect Size* produces the estimates of the size of the indirect effect; (2) Total effect model produces the direct effect of the predictor on the outcome (in this case the regression of infidelity predicted from pornography consumption). None of the options under [Conditioning] apply to simple mediation models, so we can ignore this button and click [OK] to run the analysis.
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '50%'}
 knitr::include_graphics("picts/spss2_7.png")
@@ -645,14 +645,6 @@ First, were told the effect of pornography consumption on the number of hook-ups
 
 The rest of Output 11 you will see only if you selected Effect size; it contains various standardized forms of the indirect effect. In each case they are accompanied by a bootstrapped confidence interval. As with the unstandardized indirect effect, if the confidence intervals don’t contain zero then we can be confident that the true effect size is different from  ‘no effect’. In other words, there is mediation. All of the effect size measures have confidence intervals that don’t include zero, so whichever one we look at we can be fairly confident that the indirect effect is greater than ‘no effect’. Focusing on the most useful of these effect sizes, the standardized b for the indirect effect, its value is $b = .042, 95\% BCa\; CI=[.004, .089]$, and similarly, $\kappa^2 = .043, 95% BCa\; CI=[.006, .090]$. $\kappa^2$ is bounded to fall between 0 and 1, so we can interpret this as the indirect effect being about 4.3\% of the maximum value that it could have been, which is a fairly small effect. We might, therefore, want to look for other potential mediators to include in the model in addition to relationship commitment.
 
-*Output 12*
-```txt
-Normal theory tests for indirect effect
-     Effect         se          Z          p
-      .2920      .1477     1.9773      .0480
-```
-
-Output 12 shows the results of the Sobel test. As I have mentioned before, it is better to interpret the bootstrap confidence intervals than formal tests of significance; however, if you selected Sobel test this is what you will see. Again, we’re given the size of the indirect effect ($b = 0.292$), the standard error, associated $z$-score ($z = 1.98$) and $p$-value ($p = .048$). The p-value is just under the not-at-all magic .05 threshold so we’d conclude that there is a significant indirect effect, so there is compelling evidence that there is a small, but meaningful mediation effect.
 
 \newpage
 **Reporting the Results of the Mediation Analysis**
