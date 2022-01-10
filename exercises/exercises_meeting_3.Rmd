@@ -118,7 +118,7 @@ The hierarchical regression analysis results in the following table:
 | ----- | ----- | ------------------- | ----------------- | ------ | ------ | ------- |
 | 1     | .330  | .33                 | 204.07            | 3      | 1242   | $<.001$ |
 | 2     | .420  | .09                 | 27.40             | 7      | 1235   | $<.001$ |
-| 3     | .430  | .01                 | 1.95              | 11     | 1224   | $<-05$  |
+| 3     | .430  | .01                 | 1.95              | 11     | 1224   | $<.05$  |
 
 Discuss for each set of predictors whether they significantly improve the prediction of school performance in secondary school (use both $R^2_\text{change}$ and the corresponding $F_\text{change}$ & $p$-value to support your answer)
 
@@ -358,7 +358,7 @@ When we compare model 1 and model 3, we see that the regression weight of $X1$ h
 
 $r^2_{YX} = .74^2 = 0.55$. Thus $X3$ explains 55% of the variance in $Y$.
 
-The parttial correlation between $Y$ and $X3$ while controlling for $X1$ (see table 3) equals $.61^2 = .37$. Thus, after we rule out the variance that $X3$ shares with $X1$, $X3$ explains 37% of the variance in $Y$.
+The part correlation (which is also known as *"semi-partial correlation"*) between $Y$ and $X3$ when controlling for $X1$ (see table 3) equals $.61$. That is, the proportion explained variance in $Y$ by $X3$ when controlling for $X1$ equals  $.61^2 = .37$. In other words, after we rule out the variance that $X3$ shares with $X1$, $X3$ explains 37% of the variance in $Y$.
 
 \newpage
 
