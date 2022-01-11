@@ -654,3 +654,4 @@ Some people report only the indirect effect in mediation analysis, and possibly 
 "There was a significant indirect effect of pornography consumption on the number of hook-ups though relationship commitment, $b = 0.292, 95\% BCa\;CI=[0.031, 0.659]$. This represents a relatively small effect,  $\kappa^2 = .043, 95\% BCa\; CI=[.006, .090]$."
 
 
+
