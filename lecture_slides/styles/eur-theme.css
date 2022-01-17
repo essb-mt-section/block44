@@ -1,0 +1,386 @@
+/* tweaked Xaringan Package defaults that we slightly tweak
+author: Oliver Lindemann
+*/
+
+
+/* colours */
+
+:root {
+  /* Corporate */
+  --essb-orange: #FFA300;
+  --eur-green: #0C8066;
+  /* Brights */
+  --vibrant-red: #EE3130;
+  --orange: #EB6F1B;
+  --warm-yellow: #EBA411;
+  --vc-green: #093323;
+  --dark-green: #004D27;
+  --mid-green: #4A7729;
+  --acid-green: #B0AE24;
+  --dark-blue: #002B4A;
+  --mid-blue: #00508C;
+  --light-blue: #8CBAD4;
+  --mauve-blue: #3A5DAE;
+/* Neutrals */
+  --dark-warm-grey: #706359;
+  --mid-warm-grey: #ACA6A2;
+  --light-warm-grey: #D4D0CA;
+  --nice-black: #272822;
+  --almost-white: #FAFAFA;
+  --mid-cool-grey: #73808A;
+  --light-cool-grey: #C6C7C9;
+  --digi-gold: #B49243;
+  --light-digi-gold: #C8B182;
+}
+
+/* colour tags */
+.essb-orange {  color: var(--essb-orange); }
+.eur-green {  color: var(--eur-green); }
+.blue { color: var(--mauve-blue); }
+.grey {color: #515151;}
+.lightgrey {color: var(--light-cool-grey); }
+.black {color: black;}
+.white {color: white;}
+
+/*font sizes */
+:root{
+  --size-tiny: 18px;
+  --size-scriptsize: 20px;
+  --size-footnotesize: 22px;
+  --size-small: 24px;
+  --size-normalsize: 28px;
+  --size-large: 30px;
+  --size-Large: 36px;
+  --size-LARGE: 40px;
+  --size-huge: 46px;
+  --size-Huge: 50px;
+}
+
+.tiny  {font-size: var(--size-tiny);}
+.scriptsize  {font-size: var(--size-scriptsize);}
+.footnotesize  {font-size: var(--size-footnotesize);}
+.normalsize  {font-size: var(--size-normalsize);}
+.large  {font-size: var(--size-large);}
+.Large  {font-size: var(--size-Large);}
+.LARGE  {font-size: var(--size-LARGE);}
+.huge  {font-size: var(--size-huge);}
+.Huge {font-size: var(--size-Huge);}
+
+
+.emph {
+  font-weight: bold;
+  color: var(--eur-green);
+}
+
+.emph2 {
+  font-weight: bold;
+  color: var(--mauve-blue);
+}
+
+.emph3 {
+  font-weight: bold;
+  color: var(--orange);
+}
+
+/* Global settings, all slides */
+
+:root{
+  --col-heading: var(--eur-green);
+  --col-text: black;
+}
+
+
+
+.remark-slide-number {
+  font-size: var(--size-tiny);
+}
+
+.remark-slide-content {
+  padding-left: 80px;  /* delete this for 4:3 aspect ratio */
+}
+
+.remark-slide-content h1  {
+  color: var(--col-heading);
+  font-size: var(--size-Huge);
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.remark-slide-content h2 {
+  font-size: var(--size-LARGE);
+  color: var(--col-heading);;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.remark-slide-content h3 {
+  font-size: var(--size-Large);
+  color: var(--col-heading);;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+
+p, ul, h3, li {
+  margin-top: 0.5em;
+  font-size: var(--size-normalsize);
+  color: var(--col-text);
+}
+
+a, a > code {
+  color: var(--mauve-blue)
+  text-decoration: underline;
+}
+
+
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+
+/* class small */
+.small h1 { font-size: var(--size-Huge);}
+.small h2 { font-size: var(--size-Large);}
+.small h3 { font-size: var(--size-large);}
+.small p,
+.small ul,
+.small li { font-size: var(--size-small) }
+
+
+.align-center p {text-align: center;}
+.align-right p {text-align: right;}
+
+/*positioned box */
+.posbox {
+  position: absolute;
+  font-size: 100%;
+}
+
+.boxframed , .boxred {
+  background: var(--almost-white);
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-top: 0.5ex;
+  padding-bottom: 0ex;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 100%;
+}
+
+.boxred{
+  background: #771111;
+  color: white;
+}
+
+.inverse {
+  background-color: var(--nice-black);
+  color:  var(--almost-white);
+
+}
+
+/* slightly spacing change */
+.inverse h1 {
+  color: var(--essb-orange);
+  line-height: 1.0em;
+}
+
+.inverse h2, .inverse h3 {
+  color: var(--eur-green);
+  line-height: 1.0em;
+}
+
+.inverse p, .inverse ul, .inverse li {color: var(--almost-white);}
+
+/* Two-column layout (slightly wider for aspect ration) */
+.left-column {
+  width: 60%;
+  float: left;
+}
+
+/* slightly thiner to suppor aspect ration */
+.right-column {
+  width: 37%;
+  float: right;
+  padding-top: 1em;
+}
+
+
+
+.pull-left {
+  float: left;
+  width: 45%;
+}
+
+.pull-right {
+  float: right;
+  width: 45%;
+}
+
+.pull-right-clear {
+  float: right;
+  width: 45%;
+}
+
+.pull-right-clear ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+/* adjust table horizontal spacing */
+th, td {
+    padding: 5px 15px 5px 15px;
+}
+
+table {
+  font-size: var(--size-normalsize);
+  color: var(--col-text);
+  margin: auto;
+  border-top: 4px solid #666;
+  border-bottom: 4px solid #666;
+}
+thead th {
+  border-bottom: 2px solid #666;
+  background: #eee;
+}
+
+.gray-rows thead,
+.gray-rows tfoot,
+.gray-rows tr:nth-child(even) { background: #eee; }
+
+.small-table table {font-size: var(--size-scriptsize);}
+.compact-table table {font-size: var(--size-tiny);
+                  font-family: 'Arial', sans-serif;
+                  text-align: center;}
+.compact-table th, td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 0px 0px 0px;
+}
+.compact-table tr:nth-child(even) { background: #eee; }
+
+.final-slide h1,
+.center h1,
+.middle h1{
+  padding-top: 50px;
+}
+
+
+/* Title slide */
+.title-slide {
+  background-image: url("../styles/erasmus-logo-white.png"),
+                    url("../styles/essb-logo.png");
+  background-position:  75% 90%, 95% 90%;
+  background-size:  140px, 180px;
+  background-color: var(--nice-black);
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+.title-slide h1 {
+  color: var(--almost-white);;
+  padding-top: 50px;
+  font-weight: normal;
+  font-size: 84px;
+  line-height: 0.05;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+/* H2 fonts */
+.title-slide h2 {
+  color: var(--essb-orange);
+  font-size: var(--size-Huge);
+  text-align: left;
+  text-shadow: none;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin-top: 30px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: var(--size-large);
+  color: var(--almost-´);;
+  font-weight: normal;
+  text-align: left;
+  text-shadow: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count */
+.title-slide .remark-slide-number {
+  font-size: 0px;
+  text-shadow: none;
+}
+
+
+/* SECTIONS */
+
+.final-slide {
+  background-color: var(--nice-black);
+  font-weight: normal;
+  color: white;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.final-slide .remark-slide-number {
+  font-size: 0px;
+}
+
+.final-slide {
+  background-image: url("../styles/erasmus-logo-white.png"),
+                    url("../styles/essb-logo.png");
+  background-position: 95% 95%, 5% 95%;
+  background-size: 180px, 200px;
+}
+
+.final-slide h1 {
+  color: var(--essb-orange);
+}
+
+.final-slide h2 {
+  padding-top: 100px;
+  color: white;
+}
+
+.final-slide  p {
+ padding-top: 200px;
+ color:  var(--almost-white);
+}
+
+
+.bkg-logo {
+  background-image: url("../styles/erasmus-logo-grey.png");
+  background-position: 95% 95%;
+  background-size: 200px;
+}
+
+
+/* leave this alone: required for printing and pdf generation*/
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+
