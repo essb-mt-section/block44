@@ -235,7 +235,7 @@ ANOVA short report: An experiment was conducted to examine the effect of backgro
 
 A one-way ANOVA was conducted, which indicated that background noise had a significant effect on the clarity of mobile phone calls, $F(4,45) = 40.85, p < .001$. The proportion explained variance was $R^2 = .784$. Note: $R^2$ is not printed in the SPSS output above, but you can calculate it using the sum of squares.
 
-$$ R^2 = \frac{SS_\text{Model}}{SS_\text{(Correct) Total}} = \frac{373.28}{476.080}=.784$$
+$$ R^2 = \frac{SS_\text{Model}}{SS_\text{(corrected) Total}} = \frac{373.28}{476.080}=.784$$
 
 Thus $78.4\%$ of the differences in clarity of the mobile phone calls is explained by various levels of background noise. This indicates a strong effect.
 
@@ -311,13 +311,13 @@ Why ANOVA? Researchers are interested in differences between groups based on one
 
 **Answer  2C**
 
-* $H_0:  \mu_1 = \mu_2 = \mu_3 = \mu_4 = \mu_5$
+* $H_0:  \mu_1 = \mu_2 = \mu_3 = \mu_4$
 * $H_a:$ at least one difference is significant
 
 
 **Answer  2D**
 
-Short report: We conducted a 1-way ANOVA one the data of four different patient groups. Results indicated that the groups differed with respect to the average maladaptivity scores, $F(3,36) = 25.306, p < .001$. The proportion variance in maladaptivity that is explained by the differences between groups is .678, this is a large effect size.
+Short report: We conducted a 1-way ANOVA one the data of four different patient groups. Results indicated that the groups differed with respect to the average maladaptivity scores, $F(3,36) = 25.306, p < .001$. The proportion variance in maladaptivity that is explained by the differences between groups is $R^2=.678$, this is a large effect size.
 
 
 **Answer  2E**
@@ -344,8 +344,9 @@ Short report: We conducted a 1-way ANOVA one the data of four different patient 
 
 **Answer  2H**
 
-We divide the $p$-values by 2, because of the one-sided hypotheses. This results in
-rejecting the first and the second, but not the third hypothesis.
+You could use one-sided tests here, because you have one-sided hypotheses. Zo do so, you divide the $p$-values by 2.
+
+However, usually one-sided tests are not advised. Therefore, we suggest to test two sided, even though your theoretical hypotheses are one-sided. This is to keep the overall type I error rate (false positives) under control.
 
 
 **Answer 2I**
@@ -354,7 +355,7 @@ rejecting the first and the second, but not the third hypothesis.
 R_\text{contrast} &= \sqrt{\frac{t^2}{t^2+ df}} \\
 R_\text{contrast 1} &= \sqrt{\frac{8.12^2}{8.12^2+ 36}} = .80 \text{ (large effect size)} \\
 R_\text{contrast 2} &= \sqrt{\frac{4.51^2}{4.51^2+ 36}} = .60 \text{ (large effect size)} \\
-R_\text{contrast 3} &= \sqrt{\frac{1.65^2}{1.65^2+ 36}} = 27 \text{ (small to medium effect size)} \\
+R_\text{contrast 3} &= \sqrt{\frac{1.65^2}{1.65^2+ 36}} = .27 \text{ (small to medium effect size)} \\
 \end{align*}
 
 
