@@ -86,7 +86,7 @@ plot(ven,
 $$F = \frac{MS_\text{model}}{MS_\text{residual}}$$
 `r vspace(29)`
 
-The smaller $MS_\text{model}$, the larger $F$
+The smaller $MS_\text{residual}$, the larger $F$
 
 the more likely the group differences are significant
 ]
