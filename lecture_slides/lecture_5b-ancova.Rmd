@@ -628,7 +628,7 @@ For one group $T0_{QL}$ and $T1_{QL}$ are slightly negatively related, whereas i
 
 .emph[Problem]
  * ANCOVA estimates an average slope over the three groups. 
- * Estimated slope is not representation for any group
+ * Estimated slope is not representative for any group
 
 Solution: **multilevel linear model**
 

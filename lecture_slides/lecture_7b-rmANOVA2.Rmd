@@ -1,0 +1,323 @@
+---
+title: "Lecture 7b: RM-ANOVA (part 2)"
+subtitle: "4.4: Applied Multivariate Data Analysis"
+author: Oliver Lindemann
+institute: "Erasmus Univeristy Rotterdam"
+#date: "<small>Jan 2022</small>"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [styles/eur-theme.css,  styles/eur-fonts.css ]
+    self_contained: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r echo=FALSE, message=FALSE}
+library(knitr)
+library(tidyverse)
+source("styles/style_functions.R")
+
+options(knitr.kable.NA = "")
+```
+
+# Summary: repeated measures ANOVA (part 2)
+
+* Assumptions RM-ANOVA
+* Example RM-ANOVA in SPSS
+* Exploring two-way interaction of an $3\times 3$ design
+* Planned Contrasts
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (3) -->
+---
+# Assumptions RM-ANOVA
+
+Should be evaluated per factor to assure the $F$-test is correct.
+
+1. .emph2[Independent observations]
+2. .emph2[Normality of errors]
+  * not a problem as long $df_\text{residual} > 20$
+  * but: inspect histograms of standardized residuals for outliers, or severe skewness!
+3. .emph2[Sphericity]
+  * important for all effect including a *within-subjects* factor with **more than two levels**. Violations results in increased type I error rate.
+4. Homoscedasticity (only for mixed ANOVAs)
+  * Homogeneity of variance for the *between-subjects* factors
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (4) -->
+---
+class: middle, center, inverse
+
+# Example
+# $3 \times 3$ repeated measures ANOVA
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (5) -->
+---
+# Study: Effects of Advertising on the Evaluation of Drinks
+
+.small[*Participants viewed advertisements of beer, wine and water brands that comprised a positive, negative and neutral image. After each of the 9 situations that participants were ask about the attitude about the drink.*
+]
+
+`r vspace(10)`
+
+.pull-left[
+* within-subject factor .emph2[*Drink*]
+  * 3 levels
+  * Beer, Wine, Water
+* within-subject factor *.emph2[Imagery]*
+  * 3 levels
+  * Positive, negative, neutral
+]
+.pull-right[
+* Dependent Variable (DV)
+  * .emph2[Evaluation of product] 
+  * from -100 (dislike very much) to +100 (like very much)
+]
+  
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (6) -->
+---
+# Example: Effects of Advertising on the Evaluation of Drinks
+
+1. Main effect *Drink*
+  * Are there overall popularity-differences between the drinks? 
+`r vspace(10)`
+2. Main effect *Imagery*
+  * On average do participants  give different evaluations after seeing a positive, a negative, or a neutral image? 
+`r vspace(10)`
+3. Interaction *Drink* $\times$ *Imagery*
+  * Is the effect of imagery different for the different drinks?
+  
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (7) -->
+---
+class: small
+# SPSS Output: Mauchly's Test of Sphericity
+
+`r image("incl/rm_anova_mauchly.png", width="80%")`
+
+.pull-left[
+* Main effect *Drink* 
+  * no sphericity, GG epsilon $< .75$ 
+  * **Greenhous-Geisser** adjusted $F$-test
+* Main effect *Imagery*
+  * no sphericity, G-G epsilon $< .75$ 
+  * **Greenhous-Geisser** adjusted $F$-test
+]
+.pull-right[
+* Interaction-effect *Drink* $\times$ *Imagery*
+  * Mild deviation from sphericity, $.75 < \text{GG epsilon} < .95$
+  * **Huynh-Feldt** corrected F-test
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (8) -->
+---
+class: center, middle
+`r image("incl/rm_anova_results0.png", width="75%")`
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (9) -->
+---
+class: center, middle
+`r image("incl/rm_anova_results1.png", width="75%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (10) -->
+---
+class: small
+# Main Effect of Drink
+
+.pull-left[
+`r image("incl/rm_anova_results_fig1.png", width="100%")`
+]
+
+.pull-right-clear[
+* Mauchly's test indicated that the assumption of sphericity had been violated for the main effect of drink, $\chi^2(2) = 23.75, p < .001$. We corrected using Greenhouse-Geisser estimates of sphericity $(\epsilon = 0.58)$. 
+
+* Results indicate a significant difference in rating between different drinks, $F(1.15, 21.93) = 5.11, p = .03$, $\text{partial }\eta^2 = .21$.
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (11) -->
+---
+class: center, middle
+`r image("incl/rm_anova_results2.png", width="75%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (12) -->
+---
+class: small
+# Main Effect of Imagery
+
+.pull-left[
+`r image("incl/rm_anova_results_fig2.png", width="100%")`
+]
+.pull-right[
+* Mauchly's test indicated that the assumption of sphericity had been violated for the main effect of drink, $\chi^2(2) = 7.42, p = .02$. Therefore, degrees of freedom were corrected using Greenhouse-Geiser estimates of sphericity $(\epsilon = .75)$. 
+
+* Results indicate a significant difference in rating between different types of imagery $F(1.50, 28.40) = 122.57$, $p < .001$.
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (13) -->
+---
+class: center, middle
+`r image("incl/rm_anova_results3.png", width="75%")`
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (14) -->
+---
+class: small
+# Drink $\times$ Imagery Interaction
+
+.pull-left[
+`r image("incl/rm_anova_results_fig3.png", width="100%")`
+]
+.pull-right[
+* Estimates of epsilon showed a mild departure from sphericity. Therefore, degrees of freedom were corrected using Huynh-Feldt estimates of sphericity $(\epsilon = .98)$.  
+
+* There was a significant interaction effect between the type of drink and the type of imagery used $F(3.9, 74.37) = 17.16, p < .001$.
+]
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (15) -->
+---
+class: small
+# Follow-up tests: Planned Comparision
+
+--
+
+.pull-left[
+*  Main effect *Drink* (level 3 = control)
+  * Simple contrasts: 
+  $$H_0:\; \mu_1 = \mu_3$$
+  $$H_0:\; \mu_2 = \mu_3$$
+
+*  Main effect *Imagery* (level 3 = control)
+  * Simple contrasts: 
+  $$H_0:\; \mu_1 = \mu_3$$
+  $$H_0:\; \mu_2 = \mu_3$$
+]
+.pull-right[
+* Interaction effect *Drink* $\times$ *Imagery*
+  * Simple contrasts: 
+
+    $$H_0:\; (\mu_1 - \mu_3)^\text{pos} = (\mu_1 - \mu_3)^\text{neu}$$
+    $$H_0:\; (\mu_1 - \mu_3)^\text{neg} = (\mu_1 - \mu_3)^\text{neu}$$
+    $$H_0:\; (\mu_2 - \mu_3)^\text{pos} = (\mu_2 - \mu_3)^\text{neu}$$
+    $$H_0:\; (\mu_2 - \mu_3)^\text{neg} = (\mu_2 - \mu_3)^\text{neu}$$
+]
+  
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (16) -->
+---
+# Planned Comparision
+
+`r image("incl/rm_anova_results_contrasts0.png", width="80%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (17) -->
+---
+# Planned Comparision: Factor *Drink*    
+
+`r image("incl/rm_anova_results_contrasts1.png", width="80%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (18) -->
+---
+class: small
+# Planned Comparision: Factor *Drink*    
+.pull-left[
+`r image("incl/rm_anova_results_fig1.png", width="100%")`
+]
+.pull-right[
+$$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
+
+`r vspace(30)`
+* Simple contrasts revealed both ratings of beer and wine were significanlty higher than water, $F(1, 19) = 6.22, r = .50$, $F(1, 19) = 18.61, r = .70$
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (19) -->
+---
+# Planned Comparision: Factor *Drink*    
+
+`r image("incl/rm_anova_results_contrasts2.png", width="80%")`
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (20) -->
+---
+# Planned Comparision: Factor *Imagery*    
+
+`r image("incl/rm_anova_results_contrasts3.png", width="80%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (21) -->
+---
+class: small
+# Planned Comparision: Factor *Imagery*      
+.pull-left[
+`r image("incl/rm_anova_results_fig2.png", width="100%")`
+]
+.pull-right[
+$$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
+
+`r vspace(30)`
+* Simple contrasts revealed ratings after positive imagery were significantly higher than after neutral imagery; and after negative imagery ratings were significantly lower than after neutral imagery; $F(1, 19) = 142.19, r = .94$, $F(1, 19) = 47.07, r = .84$.
+]
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (22) -->
+---
+# Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
+
+`r image("incl/rm_anova_results_contrasts4.png", width="80%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (23) -->
+---
+class: small
+# Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
+.pull-left[
+`r image("incl/rm_anova_results_fig4.png", width="100%")`
+]
+.pull-right[
+* Simple contrasts revealed that the effect of negative imagery compared to neutral imagery:
+
+* was less strong for the rating of  Beer than the rating of water  $F(1, 19) = 6.75, r = .51$
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (24) -->
+---
+# Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
+
+`r image("incl/rm_anova_results_contrasts5.png", width="80%")`
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (25) -->
+---
+class: small
+# Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
+.pull-left[
+`r image("incl/rm_anova_results_fig5.png", width="100%")`
+]
+.pull-right[
+* Simple contrasts revealed that the effect of negative imagery compared to neutral imagery:
+was stronger for the rating of  Wine than the rating of water $F(1, 19) = 26.91, r = .77$
+]
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (26) -->
+---
+# Conclusions 
+
+## Specific hypotheses: Interaction *Drink* $\times$  *Imagery* 
+
+Simple contrasts revealed that the effect of *negative imagery* compared to *neutral imagery* $\ldots$
+
+$\ldots$ was less strong for the rating of *Beer* than the rating of *Water*  F(1, 19) = 6.75, r = .51,
+
+$\ldots$but stronger for the rating of  *Wine* than the rating of *Water* F(1, 19) = 26.91, r = .77
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (27) -->
+---
+layout: false
+class: final-slide
+
+# Thank you very much 
+
+Oliver Lindemann
+
