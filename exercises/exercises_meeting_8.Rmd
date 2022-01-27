@@ -49,7 +49,7 @@ Which hypotheses can be tested with “Tests of Within-Subjects Effects”?
 **(1D)**
 Write a “short report” based on the information above. Also compute the effect size for the contrast:
 
-$$r = \sqrt{\frac{F_\text{effect}}{F_\text{effect} + df_\text{effect}}}$$
+$$r = \sqrt{\frac{F_\text{effect}}{F_\text{effect} + df_\text{residual}}}$$
 
 
 **(1E)**
@@ -147,14 +147,14 @@ When drawing causal conclusions from an experiment which is a mix of manipulated
 
 **Answer 1B**
 
-Group: $\mu(\text{non-fearfull}) =\mu(\text{fearful})$
+Group: $\mu_\text{non-fearfull} =\mu_\text{fearful}$
 
-Stimulus: $\mu(\text{spider}) =\mu(\text{neutral})$
+Stimulus: $\mu_\text{spider} =\mu_\text{neutral}$
 
 Group $\times$ Stimulus:
 
-* $\mu(\text{non-fearfull, spider}) - \mu(\text{non-fearfull, neutral}) =  \mu(\text{fearful, spider})-\mu(\text{fearful, neutral})$ or
-* $\mu(\text{non-fearfull, spider}) -  \mu(\text{fearful, spider}) = \mu(\text{non-fearfull, neutral}) -\mu(\text{fearful, neutral})$
+* $\mu_\text{(non-fearfull, spider)} - \mu_\text{(non-fearfull, neutral)} =  \mu_\text{(fearful, spider)} -\mu_\text{(fearful, neutral)}$ or
+* $\mu_\text{(non-fearfull, spider)} -  \mu_\text{(fearful, spider)} = \mu_\text{(non-fearfull, neutral)} -\mu_\text{(fearful, neutral)}$
 
 
 **Answer 1C**
@@ -169,7 +169,7 @@ See table of “Tests of Within subjects contrasts”:
 
 Note: $df_\text{model}=df_\text{effect}=1$
 
-There are no differences between both groups (fearful, non-fearful) in terms of the average number of changes that were noticed by participants, $F(1,48) < 1, r = .01$. There was a strong, significant main effect of stimulus, $F(1,48) = 52.23, p < .001, r = .72$; on average the number of changes that were noticed by participants was larger when the stimulus was a spider.
+There are no differences between both groups (fearful, non-fearful) in terms of the average number of changes that were noticed by participants, $F(1,48) < 1, r = .11$. There was a strong, significant main effect of stimulus, $F(1,48) = 52.23, p < .001, r = .72$; on average the number of changes that were noticed by participants was larger when the stimulus was a spider.
 
 The was a small, but significant Group $\times$ Stimulus interaction-effect $F(1,48) = 4.78, p < .05, r = .3$; the increase of the number of changes that were noticed when the stimulus was a spider compared to a neutral stimulus, was larger for fearful participants than for non-fearful participants.
 
@@ -222,9 +222,9 @@ In the table with “tests of within subjects contrasts” the follow-up contras
 ws-factor are given.
 
 * The number of contrast-tests for a factor equals the number of levels of that
-factor - 1.
-* The number of contrast-tests for an interaction effect between factors equals the $(\text{number of levels for factor1} - 1) \times (\text{number of levels for factor2} -1)$\newline $=(nlv_\text{factor 1}-1) \times (nlv_\text{factor 2}-1)$
-* Or for a three-way interaction: $(nlv_\text{factor 1}-1) \times (nlv_\text{factor 2}-1) \times (nlv_\text{factor 3}-1)$.
+factor minus 1 $(N_\text{levels}-1)$ .
+* The number of contrast-tests for an interaction effect between factors equals $(N_\text{levels factor 1}-1) \times (N_\text{levels factor 2}-1)$
+* Or for a three-way interaction: $(N_\text{levels factor 1}-1) \times (N_\text{levels factor 2}-1) \times (N_\text{levels factor 3}-1)$.
 
 In total we have $2 + 2 = 4$ contrasts for the main effects of both ws-factors,
 $2 + 2 + 4 = 8$ contrasts for the three 2-way interaction-effects, and 4 for the 3-way
