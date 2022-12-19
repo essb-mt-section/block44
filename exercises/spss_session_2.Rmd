@@ -16,17 +16,16 @@ output:
 
 \vfill
 
-Literature: 
+Literature:
 
-* Field (4th ed):  Chapter 8 & 10
-* Field (5th ed):  Chapter 9 & 11
+* Field (5th ed, 2018):  Chapter 9 & 11
 
 \newpage
 
 # Multiple Regression Analysis: assumptions
 
 
-Open the data file ‘`salary.sav`’. You will perform a short initial data analysis. 
+Open the data file ‘`salary.sav`’. You will perform a short initial data analysis.
 
 Inspect the data matrix.
 
@@ -41,7 +40,7 @@ Compute the frequencies on the qualitative variables.
 **(1C)**
 What are the frequencies of the response categories on the qualitative variable(s)? Is any of these frequencies remarkably low (less than 10% of the sample size)?
 
-Compute the means and standard deviations  of the continuous variables. 
+Compute the means and standard deviations  of the continuous variables.
 
 **(1D)**
 In order to inspect the normality of the distribution of the continuous variables, plot histograms (with normal curve) of these variables.
@@ -176,7 +175,7 @@ If it doesn't work to install the program, please run it via the SPSS syntax. Fo
 
 First save both the process syntax file (process.sps) and the moderation (syntax_McNulty et al. (2008).sps) or mediation syntax file (syntax_Lambert et al (2012).sps). Use right click and "save link as ..." to download the files and save it on your PC.
 
- 
+
 
 (1) Open the dataset you want to analyze.
 
@@ -188,11 +187,11 @@ This syntax is a macro it activates the process program in SPSS.
 
 (3) Open the mediation or moderation syntax
 
- 
+
 
 Either click “Run”, “All” if you are working on the exercise of the SPSS computer session or, if you are working on the assignment, change the variable names in the syntax into the names of the data file you are analyzing.
 
- 
+
 
 When you get ERRORS with wording similar to: Error # 6819 in column 1024. Text: (End of Command)
 
@@ -209,12 +208,12 @@ Please CLOSE SPSS and start again.
 \textsl{McNulty et al. (2008) found a relationship between a person’s `Attractiveness` and how much `Support` they give their partner in newlyweds, where supposedly attractiveness is a predictor of support. Is this relationship moderated by gender (i.e., whether the data were from the husband or wife)? include a scatterplot with `Attractiveness` on the x-axis and `Support` on the y-axis, and use different markers (set markers by) for gender. In the Chart Editor, ask for separate regression lines for the groups. Interpret this graph. The data are in `McNulty et al. (2008).sav`.}
 
 
-If you click on [*Options*] another dialog box will appear containing four useful options for moderation. Selecting 
+If you click on [*Options*] another dialog box will appear containing four useful options for moderation. Selecting
 
-1. Mean center for products centers the predictor and moderator for you; 
-2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model; 
-3. OLS/ML confidence intervals produces confidence intervals for the model, and I’ve tried to emphasize the importance of these throughout the book; and 
-4. Generate data for plotting is helpful for interpreting and visualizing the simple slopes analysis. 
+1. Mean center for products centers the predictor and moderator for you;
+2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model;
+3. OLS/ML confidence intervals produces confidence intervals for the model, and I’ve tried to emphasize the importance of these throughout the book; and
+4. Generate data for plotting is helpful for interpreting and visualizing the simple slopes analysis.
 
 Talking of simple slopes analysis, if you click on [*Conditioning*], you can change whether you want simple slopes at ±1 standard deviation of the mean of the moderator (the default, which is fine) or at percentile points (it uses the 10th, 25th, 50th, 75th and 90th percentiles). Back in the main dialog box, click [*OK*] to run the analysis.
 
@@ -429,12 +428,12 @@ To access the PROCESS dialog box in (see below) select [Analyze Regression $\rig
 
 PROCESS can test 74 different types of model, and these models are listed in the drop-down box labelled `Model Number`. Simple moderation analysis is represented by model 1, but the default model is 4 in some versions of PROCESS (4 = mediation, which we’ll look at next). Therefore, activate this drop-down list and select $[1]$ if necessary. The rest of the options in this dialog box are for models other than simple moderation, so we’ll ignore them.
 
-If you click on [Options] another dialog box will appear containing four useful options for moderation. Select: 
+If you click on [Options] another dialog box will appear containing four useful options for moderation. Select:
 
-1. Mean center for products centres the predictor and moderator for you; 
-2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model (select option HC3 for this analysis); 
-3. OLS/ML confidence intervals produces confidence intervals for the model (in newer versions of PROCESS, confidence intervals are given by default and you will not have an option to select them), and I’ve tried to emphasize the importance of these throughout the book; and 
-4. Generate data for plotting is helpful for interpreting and visualizing the simple slopes analysis. 
+1. Mean center for products centres the predictor and moderator for you;
+2. Heteroscedasticity-consistent SEs means we need not worry about having heteroscedasticity in the model (select option HC3 for this analysis);
+3. OLS/ML confidence intervals produces confidence intervals for the model (in newer versions of PROCESS, confidence intervals are given by default and you will not have an option to select them), and I’ve tried to emphasize the importance of these throughout the book; and
+4. Generate data for plotting is helpful for interpreting and visualizing the simple slopes analysis.
 
 Talking of simple slopes analysis, under [Conditioning], you can change whether you want simple slopes at $\pm 1$ standard deviation of the mean of the moderator (the default, which is fine) or at percentile points (it uses the 10th, 25th, 50th, 75th and 90th percentiles). Back in the main dialog box, click [OK] to run the analysis.
 
@@ -470,12 +469,12 @@ int_1         .1053      .0295     3.5677      .0005      .0470      .1636
 
 Interactions:
  int_1    Attacti    X     Gender
-```  
-  
+```
+
 Output 1 is the main moderation analysis. We’re told the $b$-value for each predictor, the associated standard errors (which have been adjusted for heteroscedasticity because we asked for them to be). Each b is compared to zero using a $t$-test, which is computed from the beta divided by its standard error. The confidence interval for the $b$ is also produced (because we asked for it). Moderation is shown up by a significant interaction effect, and in this case the interaction is significant, $b = 0.105, 95\% CI=[0.047, 0.164], t = 3.57, p < .01$, indicating that the relationship between attractiveness and support is moderated by gender.
 
 
-  
+
 **Output 2**
 
 ```txt
@@ -489,10 +488,10 @@ Conditional effect of X on Y at values of the moderator(s)
 Values for quantitative moderators are the mean and plus/minus one SD from mean
 ```
 
-To interpret the moderation effect we can examine the simple slopes, which are shown in Output . Essentially, the table shows us the results of two different regressions: the regression for attractiveness as a predictor of support 
+To interpret the moderation effect we can examine the simple slopes, which are shown in Output . Essentially, the table shows us the results of two different regressions: the regression for attractiveness as a predictor of support
 
-1. when the value for gender is $-.5$ (i.e., low). Because husbands were coded as zero, this represents the value for males; and 
-2. when the value for gender is .5 (i.e., high). Because wives were coded as 1, this represents the female end of the gender spectrum. We can interpret these three regressions as we would any other: we’re interested the value of $b$ (called Effect  in the output), and its significance. 
+1. when the value for gender is $-.5$ (i.e., low). Because husbands were coded as zero, this represents the value for males; and
+2. when the value for gender is .5 (i.e., high). Because wives were coded as 1, this represents the female end of the gender spectrum. We can interpret these three regressions as we would any other: we’re interested the value of $b$ (called Effect  in the output), and its significance.
 
 From what we have already learnt about regression we can interpret the two models as follows:
 
@@ -519,7 +518,7 @@ knitr::include_graphics("picts/spss2_output7.png")
 The graph above confirms that the direction of the relationship between attractiveness and support is different for men and women by the fact that the two regression lines slope in different directions. Specifically, for husbands (blue line) the relationship is negative (the regression line slopes downwards), whereas for wives (green line) the relationship is positive (the regression line slopes upwards). Additionally, the fact that the lines cross indicates an interaction effect (moderation). However, the points are fairly widely scattered round the regression lines, the interaction is significant but the model as a whole explains less than 10% ($R^2 = .09$) of the variation is support.
 
  In sum, we can conclude that the relationship between attractiveness and support is positive for wives (more attractive wives give their husbands more support), but negative for husbands (more attractive husbands give their wives less support than unattractive ones). Although they didn’t test moderation, this mimics the findings of McNulty et al. (2008).
- 
+
 \newpage
 
 ### Task 4 & 5 {-}
@@ -571,7 +570,7 @@ LnConsum     -.4697      .2130    -2.2053      .0284
 
 ```
 
-Output 8 shows the results of the regression of number of hook-ups predicted from both pornography consumption (path $c'$ in the mediation diagram) and commitment (path b in the mediation diagram). 
+Output 8 shows the results of the regression of number of hook-ups predicted from both pornography consumption (path $c'$ in the mediation diagram) and commitment (path b in the mediation diagram).
 
 We can see that pornography consumption significantly predicts number of hook-ups even with relationship commitment in the model, $b = 1.28, t = 3.05, p = .003$; relationship commitment also significantly predicts number of hook-ups, $b = -0.62, t = -4.90, p < .001$. The $R^2$ value tells us that the model explains 14.0% of the variance in number of hook-ups. The negative $b$ for commitment tells us that as commitment increases, number of hook-ups declines (and vice versa), but the positive $b$ for consumptions indicates that as pornography consumption increases, the number of hook-ups increases also. These relationships are in the predicted direction.
 
@@ -590,7 +589,7 @@ constant     1.6296      .1114    14.6324      .0000
 LnConsum     1.5731      .4356     3.6118      .0004
 ```
 
-Output 10 shows the total effect of pornography consumption on number of hook-ups (outcome). 
+Output 10 shows the total effect of pornography consumption on number of hook-ups (outcome).
 
 You will get this bit of the output only if you selected *Total effect model*. The total effect is the effect of the predictor on the outcome when the mediator is not present in the model. When relationship commitment is not in the model, pornography consumption significantly predicts the number of hook-ups, $b = 1.57, t = 3.61, p < .001$. The $R^2$ value tells us that the model explains 5.22\% of the variance in number of hook-ups. As is the case when we include relationship commitment in the model, pornography consumption has a positive relationship with number of hook-ups (as shown by the positive b-value).
 

@@ -18,13 +18,8 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2018) Chapter 16: repeated measures ANOVA with one or more between-subjects factors
+Literature: Field (5th ed, 2018) Chapter 16: repeated measures ANOVA with one or more between-subjects factors
 
-If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
-
-| **4th** edition | **5th** edition |
-| --------------- | --------------- |
-| Chapter 15      | Chapter 16      |
 
 \newpage
 

@@ -16,28 +16,27 @@ output:
 
 \vfill
 
-Literature: 
+Literature:
 
-* Field (4th ed):  Chapter 7 & 8
-* Field (5th ed):  Chapter 8 & 9
+* Field (5th ed, 2018):  Chapter 8 & 9
 
 \newpage
 
 Earlier you learned how to calculate correlations between two variables.  This statistical approach can be expanded to the prediction of one variable from one or more other variables.  In this context, the variable to be predicted is referred to as the dependent variable, and the variable(s) used as the basis for prediction are referred to as the independent variable.
 
- 
+
 **Univariate regression**
 
 In univariate regression (i.e., regression with one independent variable), one determines the parameters of the line that best describes the relationship between the two variables; more specifically, one determines the line that best fits the points in the scatterplot diagram depicting the relationship between the independent and dependent variables.  The ‘best fitting’ regression line is determined using the least squares method.
 
- 
+
 **Multivariate regression**
 
 Here the focus lies on the prediction of a dependent variable based on multiple independent variables (or ‘predictors’).  In such multiple regression analyses, the researcher often needs to try out several possibilities (or ‘regression models’) in order to arrive at an adequate account of the data.
 
 As we proceed with this topic, you will see that the magnitude and statistical significance of a given predictor variable are not constant.  Instead, these values depend on which other predictors are included in the regression model.
 
- 
+
 **Analysis of residuals**
 
 After running a regression analysis, the first thing you need to do is look at the discrepancies between the regression line and the original data points in the scatterplot.  These discrepancies are referred to as the residuals.  By assessing whether the residuals meet several important conditions, you can evaluate whether your regression solution gives an adequate account of the data.
@@ -123,10 +122,10 @@ Open the data file '`csdata.sav`'.
 
 The goal of this study was to predict university students’ academic performance (Grade Point Average) from their prior academic performance (SAT test results & High School Grades). In the first two exercises, we will explore the data.  Then we will try out a number of models in order to determine the best basis for predicting (or describing) GPA.
 
- 
+
 
 **(4A)**
-Make scatterplot diagrams for all 15 combnations of the variables Grade Point Average; High School Grades in Math, Science, & English; and SAT scores for Mathematics & Verbal Ability (`gpa`, `hsm`, `hss`, `hse`, `satm` and `satv`). 
+Make scatterplot diagrams for all 15 combnations of the variables Grade Point Average; High School Grades in Math, Science, & English; and SAT scores for Mathematics & Verbal Ability (`gpa`, `hsm`, `hss`, `hse`, `satm` and `satv`).
 
 **(4B)**
 Based on these scatterplots, characterize the nature of each of the 15 bivariate associations between the 6 variables (& write down your answers):
@@ -182,7 +181,7 @@ Remember:
 
 A way to display explained variance in a regression analysis is by drawing a Venn-diagram, where each variable is depicted with a circle and the proportion explained variance is displayed by the amount of overlap between two circles. The total amount of explained variance of the criterion $Y$ can be read off the Venn-diagram by looking at the part of the circle of $Y$ that overlaps with the predictors. When two circles do not overlap (0%), their corresponding variables are uncorrelated.
 
-You can use the following website to draw Venn diagrams: [https://lindemann.shinyapps.io/venndiagram/](https://lindemann.shinyapps.io/venndiagram/). 
+You can use the following website to draw Venn diagrams: [https://lindemann.shinyapps.io/venndiagram/](https://lindemann.shinyapps.io/venndiagram/).
 
 
 **(5A)**
@@ -197,7 +196,7 @@ Suppose the correlation between $Y$ and $X1$ is $r=.40$. How much percent of the
 Suppose that $Y$ and $X2$ are correlated with $r=.40$, but $X2$ is uncorrelated with $X1$. How much percent of the variance in $Y$ is explained by $X2$? Fill this value in in the corresponding field (value of $YX2$).  What do you see?
 
 **(5D)**
-Suppose we would predict $Y$ from $X1$ and $X2$ in a multiple regression, what would be the value of $R^2$ (i.e. the squared multiple correlation between $Y$ and $X1$ and $X2$ together)?. 
+Suppose we would predict $Y$ from $X1$ and $X2$ in a multiple regression, what would be the value of $R^2$ (i.e. the squared multiple correlation between $Y$ and $X1$ and $X2$ together)?.
 
 <!-- What does 68 below mean? -->
 
@@ -300,7 +299,7 @@ Graphically, explore the univariate (histograms) and bivariate (scatterplots) di
 
 The residual or error equals $Y_\text{observed} - Y_\text{predicted}$
 
-**Answer 3C**: 
+**Answer 3C**:
 $weight = -51.33 + 66.63\times height$
 
 **Answer 3D**:
@@ -342,7 +341,7 @@ These so-called matrix plot are not the pretties scatterplots. They are not very
 
 **Answer 4C**
 
-All predictors, except `SATverbal` are significantly correlated with `GPA`. `HSmath` has the highest correlation with `GPA` and thus is the most important predictor given this set of predictors. 
+All predictors, except `SATverbal` are significantly correlated with `GPA`. `HSmath` has the highest correlation with `GPA` and thus is the most important predictor given this set of predictors.
 
 Further, we notice that there is some redundancy among the predictors (given the predictors are correlated). In regression analysis the unique contribution of each predictor to explaining the variance in the dependent variable is determined.
 
@@ -357,7 +356,7 @@ Short report: We conducted a regression analysis to predict Grade Point Average 
 
 **Answer 4F**
 
-We conducted a regression analysis to predict Grade Point Average from the high school grades for respectively math, science and english, as well as the SAT scores for respectively math and verbal. The proportion variance accounted for ($R^2 = .21$) was significantly more than zero, ($F(5,218) = 11.69, p < .001$). $R^2$ indicated a moderate to strong effect, but compared to model with only the high school grades, this model hardly has any incremental value. Thus the SAT scores do not add any unique information about GAP in addition to the high school grades. Solely the high school grade for math was a significant predictor of GPA ($t(218) = 3.72, p < .01$). The $b$-value indicated that, keeping all other predictor constant, higher math grades are associated with higher GPA ($b = 0.15$), and vice versa. 
+We conducted a regression analysis to predict Grade Point Average from the high school grades for respectively math, science and english, as well as the SAT scores for respectively math and verbal. The proportion variance accounted for ($R^2 = .21$) was significantly more than zero, ($F(5,218) = 11.69, p < .001$). $R^2$ indicated a moderate to strong effect, but compared to model with only the high school grades, this model hardly has any incremental value. Thus the SAT scores do not add any unique information about GAP in addition to the high school grades. Solely the high school grade for math was a significant predictor of GPA ($t(218) = 3.72, p < .01$). The $b$-value indicated that, keeping all other predictor constant, higher math grades are associated with higher GPA ($b = 0.15$), and vice versa.
 
 During the next SPSS Session in exercise C2.2 you will learn how to combine the above analyses into one hierarchical regression analysis.
 

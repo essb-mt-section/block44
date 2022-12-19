@@ -17,15 +17,9 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field, Chapter 8 & 9
-
-If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
+Literature: Field (5th ed, 2018), Chapter 8 & 9
 
 
-| **4th** edition | **5th** edition           |
-| --------------- | ------------------------- |
-| Chapter 7       | Chapter 8  (but not 8.6)  |
-| Chapter 8       | Chapter 9  (but not 9.13) |
 
 \newpage
 

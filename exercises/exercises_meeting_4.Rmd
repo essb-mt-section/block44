@@ -17,14 +17,7 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2018) Chapter 11
-
-If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
-
-
-| **4th** edition | **5th** edition |
-| --------------- | --------------- |
-| Chapter 10      | Chapter 11      |
+Literature: Field (5th ed, 2018) Chapter 11
 
 
 \newpage

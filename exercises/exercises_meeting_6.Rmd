@@ -17,14 +17,8 @@ output:
 
 **Please prepare all exercises in this document for the tutorial meeting.**
 
-Literature: Field (2018) Chapters 13 & 14
+Literature: Field (5th ed, 2018) Chapters 13 & 14
 
-If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
-
-| **4th** edition | **5th** edition           |
-| --------------- | ------------------------- |
-| Chapter 12      | Chapter 13                |
-| Chapter 13      | Chapter 14 (but not 14.9) |
 
 \newpage
 

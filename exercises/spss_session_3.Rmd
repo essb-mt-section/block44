@@ -17,10 +17,9 @@ output:
 
 \vfill
 
-Literature: 
+Literature:
 
-* Field (4th ed):  Chapter 11, 12 & 13
-* Field (5th ed):  Chapter 12, 13 & 14
+* Field (5th ed, 2018):  Chapter 12, 13 & 14
 
 \newpage
 
@@ -40,15 +39,15 @@ Test pair-wise differences between experimental conditions. Use the Games-Howell
 
 # One-way ANOVA with Contrast tests
 
-In the file '`Teach.sav`' are the results of an experiment by Field on how different teaching methods affected students’ knowledge. The dependent variable is exam marks (percentage). The experimental conditions were 
+In the file '`Teach.sav`' are the results of an experiment by Field on how different teaching methods affected students’ knowledge. The dependent variable is exam marks (percentage). The experimental conditions were
 
-* ``punish'' (1; in this condition Andy hit students who performed poorly with a large cane), 
-* ``indifferent'' (2; in this conditions students were neither punished nor rewarded). 
-* ``reward'' (3; in this condition Andy encouraged students and rewarded good students with candy), and 
+* ``punish'' (1; in this condition Andy hit students who performed poorly with a large cane),
+* ``indifferent'' (2; in this conditions students were neither punished nor rewarded).
+* ``reward'' (3; in this condition Andy encouraged students and rewarded good students with candy), and
 
-Two predictions were made: 
+Two predictions were made:
 
-1. reward will produce the best learning. 
+1. reward will produce the best learning.
 2. punishment is worse than an indifferent approach.
 
 **(2A)**
@@ -208,8 +207,8 @@ Because the variance ratio is below 2. Furthermore, Levene’s test is non-signi
 knitr::include_graphics("picts/spss3_output3.png")
 ```
 
-The main ANOVA summary table shows us that because the observed significance value 
-is less than 0.05 we can say that there was a significant effect of teaching style on exam marks, with $\text{partial}\,\eta^2 = .61$\footnote{Cohen (1988) has presented some guidelines for small ($\text{partial}\,\eta^2 = .01$), medium ($\text{partial}\,\eta^2 = .09$), and large ($\text{partial}\,\eta^2=.25$) effects. These guidelines apply to experiments and social/clinical areas of psychology; larger values could be expected for non-experimental research, sociology, and the more physiological aspects of psychology.}, indicating a large effect size. However, at this stage we still do not know exactly what the effect of the teaching style was (we don’t know which groups differed).  
+The main ANOVA summary table shows us that because the observed significance value
+is less than 0.05 we can say that there was a significant effect of teaching style on exam marks, with $\text{partial}\,\eta^2 = .61$\footnote{Cohen (1988) has presented some guidelines for small ($\text{partial}\,\eta^2 = .01$), medium ($\text{partial}\,\eta^2 = .09$), and large ($\text{partial}\,\eta^2=.25$) effects. These guidelines apply to experiments and social/clinical areas of psychology; larger values could be expected for non-experimental research, sociology, and the more physiological aspects of psychology.}, indicating a large effect size. However, at this stage we still do not know exactly what the effect of the teaching style was (we don’t know which groups differed).
 
 \newpage
 **Answer 2B**
@@ -222,9 +221,9 @@ knitr::include_graphics("picts/spss3_output4.png")
 
 $$r=\sqrt\frac{t^2}{t^2+df}\qquad (t=\frac{\text{contrast estimate}}{\text{std. error}})$$
 
-The first contrast (and the descriptive statistics) tells us that the marks after punishment were significantly lower than after indifference (again, it’s significantly different because the value in the column labelled Sig. is less than 0.05). As such we could conclude that reward produces significantly better exam grades than punishment and indifference, and that punishment produces significantly worse exam marks than indifference. 
+The first contrast (and the descriptive statistics) tells us that the marks after punishment were significantly lower than after indifference (again, it’s significantly different because the value in the column labelled Sig. is less than 0.05). As such we could conclude that reward produces significantly better exam grades than punishment and indifference, and that punishment produces significantly worse exam marks than indifference.
 
-The  $t$-test for the second contrast tells us that reward was significantly different from punishment and  indifference (it’s significantly different because the value in the column labelled Sig. is less than 0.05). Looking at the means, this tells us that the average mark after reward was significantly higher than the average mark for punishment and indifference combined. 
+The  $t$-test for the second contrast tells us that reward was significantly different from punishment and  indifference (it’s significantly different because the value in the column labelled Sig. is less than 0.05). Looking at the means, this tells us that the average mark after reward was significantly higher than the average mark for punishment and indifference combined.
 
 
 ## ANCOVA
@@ -246,7 +245,7 @@ The correlations between the DV `POST1` and the two covariates are .566 (`PRE1`)
 | Strat | 7.77            | 8.22          |
 
 
-The adjusted and unadjusted group means differ somewhat, especially the difference between the Basal and Strat group has increased due to adjustment. So probably, the groups differ somewhat in average on the covariates, but not substantially: 
+The adjusted and unadjusted group means differ somewhat, especially the difference between the Basal and Strat group has increased due to adjustment. So probably, the groups differ somewhat in average on the covariates, but not substantially:
 
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '40%'}
@@ -270,17 +269,17 @@ for the difference between two group means (due to capitalization on chance).
 
 **Answer 4B**
 
-The sample means for the three groups on ability are 19.8, 20.4, and 21.9. The groups do not differ significantly on ability ($F(2,27)=1.588, p =.223$). The proportion of explained variance by group is .105. 
+The sample means for the three groups on ability are 19.8, 20.4, and 21.9. The groups do not differ significantly on ability ($F(2,27)=1.588, p =.223$). The proportion of explained variance by group is .105.
 
 
 **Answer 4C**
 
-Given that general ability was tested before the treatment, the randomization succeeded, because the groups do not differ (significantly)on average on ability. 
+Given that general ability was tested before the treatment, the randomization succeeded, because the groups do not differ (significantly)on average on ability.
 
 
 **Answer 4D**
 
-i. If ability correlates with fluency (within the groups), $MS_\text{error}$ will decrease. 
+i. If ability correlates with fluency (within the groups), $MS_\text{error}$ will decrease.
 ii. The effect on the adjusted means will be minimal, since the groups do not differ
 (significantly) on the covariate (which is good).
 
@@ -306,7 +305,7 @@ Note that the averages are not plotted in this figure. Please do so yourself.
 
 **Answer 4G**
 
-Yes, the difference between the first and second group in adjusted means equalled 4.8, which was significantly larger than 0 ($p=.01$). The null-hypothesis values of 0 is not in the 95\%-confidence interval of the difference, which was from 1.14 to 8.50. 
+Yes, the difference between the first and second group in adjusted means equalled 4.8, which was significantly larger than 0 ($p=.01$). The null-hypothesis values of 0 is not in the 95\%-confidence interval of the difference, which was from 1.14 to 8.50.
 
 **Answer 4H**
 

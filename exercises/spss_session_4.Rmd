@@ -16,10 +16,9 @@ output:
 
 \vfill
 
-Literature: 
+Literature:
 
-* Field (4th ed):  Chapter 14 & 15
-* Field (5th ed):  Chapter 15 & 16
+* Field (5th ed, 2018):  Chapter 15 & 16
 
 \newpage
 
@@ -31,7 +30,7 @@ SPSS has several modules to compute an ANOVA.  The options for specifying contra
 
 
 * **One-way ANOVA** (Analyze / Compare Means / One-way ANOVA) \newline One-way ANOVA offers the possibility to compute polynomial contrasts, self-defined contrasts, and a large variety of post hoc multiple comparisons.
-* **GLM Univariate** (Analyze / General Linear Model / Univariate) \newline GLM Univariate can compute several kinds of contrasts (e.g. Helmert, difference, and polynomial), and the same large variety of post hoc multiple comparisons. In addition, pairwise comparisons with no (LSD), Bonferroni, or Sidak correction for multiple comparisons can be requested in the ‘Options’ dialog box. 
+* **GLM Univariate** (Analyze / General Linear Model / Univariate) \newline GLM Univariate can compute several kinds of contrasts (e.g. Helmert, difference, and polynomial), and the same large variety of post hoc multiple comparisons. In addition, pairwise comparisons with no (LSD), Bonferroni, or Sidak correction for multiple comparisons can be requested in the ‘Options’ dialog box.
 * **GLM Repeated measures** (Analyze / General Linear Model / Repeated Measures) \newline For designs with a WS-factor, GLM Repeated Measures has the option to request several kinds of contrasts\footnote{By using type III sum of squares in ANOVA (default option), for each contrast the unique contribution to the between variation is given. For correlated (i.e. non-orthogonal) contrasts this means that each contrast is adjusted for its correlations with the other contrasts. Thus, this option is recommended, when one wants to test non-orthogonal contrasts.} (e.g. Helmert, difference, and polynomial) for both the the WS-factor(s) and, if present, BS-factor(s). The post hoc multiple comparisons are only available for the BS-factors. The pairwise comparisons of the marginal means (LSD, Bonferroni, or Sidak corrected significance levels) are available for both WS- and BS-factors.
 
 
@@ -39,7 +38,7 @@ SPSS has several modules to compute an ANOVA.  The options for specifying contra
 
 Open the file ‘`Angle.sav`’. A psychologist investigates the visual detection of one object in a visual field with a large number of distractors. The dependent variable is the response time in ms. The factor that the psychologists manipulates is the location of the object. More precisely, it is the angle between the object and the center of the eye (yellow spot). In the condition ‘`angle0`’ the object is in the center of the visual field, in the condition ‘`anlge4`’ just outside the center of the visual field, and in the condition ‘`angle8`’ is it located even further from the center of the visual field. Ten subjects are presented with one presentation in each condition.
 
- 
+
 **(1A)**
 Is there an effect of `angle` on the response times?
 
@@ -127,7 +126,7 @@ What are the main results of this analysis?
 What are the assumptions of this analysis?
 
 **(4D)**
-Check the statistical assumptions, by (i.) requesting homogeneity tests and (ii.) saving the standardized residuals. These standardized residuals are saved for each respondent in new variables. Make a histogram of these variables. 
+Check the statistical assumptions, by (i.) requesting homogeneity tests and (ii.) saving the standardized residuals. These standardized residuals are saved for each respondent in new variables. Make a histogram of these variables.
 
 What are your conclusions about (a) and (b)?
 
@@ -136,8 +135,8 @@ One of the finding in d. was that the distribution of residuals at Six months wa
 
 **(4F)**
  What is conclusion about the time*group interaction? Compare your answer with your answer in A.
- 
- 
+
+
 
 
 \newpage
@@ -156,9 +155,9 @@ We run a one-way repeated measures ANOVA, where we compare three conditions of �
 knitr::include_graphics("picts/spss4_output1.png")
 ```
 
-The sphericity assumption in repeated measures ANOVA is similar to the homogeneity of error variances assumption in ANOVA, but then for within-subject factors. When this assumption is violated it means that the standard F-test for the main effect of the within-subjects factor is not correct. 
+The sphericity assumption in repeated measures ANOVA is similar to the homogeneity of error variances assumption in ANOVA, but then for within-subject factors. When this assumption is violated it means that the standard F-test for the main effect of the within-subjects factor is not correct.
 
-Sphericity is measured with Epsilon. Different estimates of Epsilon exist, but we always inspect the Greenhous-Geisser (GG) epsilon. 
+Sphericity is measured with Epsilon. Different estimates of Epsilon exist, but we always inspect the Greenhous-Geisser (GG) epsilon.
 
 * When G-G Epsilon = 1 when the assumption is perfectly met. Values < 1 indicate some degree of violation.
 * When G-G epsilon is $< .75$ we report the Greenhouse-Geisser corrected *F*-test for the main effect of the within-subjects factor. NB. the correction applies to the degrees of freedom and thus the *p*-value of the *F*-test.
@@ -237,7 +236,7 @@ knitr::include_graphics("picts/spss4_output6.png")
 
 Mean attitude seemed to be more liberal for higher levels of education. Averaged over the three educational levels, the attitude seemed to be slightly more conservative from time 1 to time 2, and then get more liberal again for time 3. (you would have to test whether this is significant)
 
-Considering the plot, the difference between high and medium education was larger at time 2 than at the other time points. Also, the difference between low and medium educated people was larger at time 1 than at the other time points\footnote{Actually, you would have to test whether this is indeed significant, but this is not required for this exercise.}. 
+Considering the plot, the difference between high and medium education was larger at time 2 than at the other time points. Also, the difference between low and medium educated people was larger at time 1 than at the other time points\footnote{Actually, you would have to test whether this is indeed significant, but this is not required for this exercise.}.
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '90%'}
 knitr::include_graphics("picts/spss4_output7.png")
@@ -248,7 +247,7 @@ knitr::include_graphics("picts/spss4_output7.png")
 **Answer 2E**
 
 Given the ordering of the levels of the ws-factor I chose repeated contrasts. Averaged over all respondents, the difference in opinion between time 1 and 2 is not significant, but the difference in opinion between time 2 and 3 is significant with small effect size $F(1, 847)=11.96, p < .001,  \eta_p^2 = .01$.
- 
+
 The contrast tests for the interaction effect showed that showed that the difference in attitude between the three groups was significant with small effect size between time 2 and 3 $F(2, 847)=4.59, p = .011,  \eta_p^2= .01$, but not significant between time 1 and 2.
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '90%'}
@@ -279,13 +278,13 @@ ii. Does this development of problem behavior over time differ between the home 
 The following follow-up strategy seems plausible (however other contrasts are also possible dependent on the research question):
 
 * repeated contrasts, null hypotheses for time (4 levels)
-  * $H_0\;\Psi_1: \mu_\text{time1} - \mu_\text{time2} = 0$ 
-  * $H_0\;\Psi_2: \mu_\text{time2} - \mu_\text{time3} = 0$ 
-  * $H_0\;\Psi_3: \mu_\text{time3} - \mu_\text{time4} = 0$ 
+  * $H_0\;\Psi_1: \mu_\text{time1} - \mu_\text{time2} = 0$
+  * $H_0\;\Psi_2: \mu_\text{time2} - \mu_\text{time3} = 0$
+  * $H_0\;\Psi_3: \mu_\text{time3} - \mu_\text{time4} = 0$
 * repeated contrast, null hypothesis for time $\times$ situation (interaction)
-  * $H_0\;\Psi_1: \mu_\text{home}-\mu_\text{school time1} = \mu_\text{home}-\mu_\text{school time2}$ 
-  * $H_0\;\Psi_2: \mu_\text{home}-\mu_\text{school time2} = \mu_\text{home}-\mu_\text{school time3}$ 
-  * $H_0\;\Psi_3: \mu_\text{home}-\mu_\text{school time3} = \mu_\text{home}-\mu_\text{school time4}$ 
+  * $H_0\;\Psi_1: \mu_\text{home}-\mu_\text{school time1} = \mu_\text{home}-\mu_\text{school time2}$
+  * $H_0\;\Psi_2: \mu_\text{home}-\mu_\text{school time2} = \mu_\text{home}-\mu_\text{school time3}$
+  * $H_0\;\Psi_3: \mu_\text{home}-\mu_\text{school time3} = \mu_\text{home}-\mu_\text{school time4}$
 
 
 **Answer 3C**
@@ -310,7 +309,7 @@ knitr::include_graphics("picts/spss4_output12.png")
 
 **(i.) In what way does the problem behavior develop over time?** $$H_0: \mu_\text{time1} = \mu_\text{time2} = \mu_\text{time3} = \mu_\text{time4}$$
 
-On average over the home and school situation the problem behavior diminishes over time, $F(3,489)=516.89, p < .001, \eta_p^2 = .76$. 
+On average over the home and school situation the problem behavior diminishes over time, $F(3,489)=516.89, p < .001, \eta_p^2 = .76$.
 
 Repeated Contrasts for ws-factor time revealed that problem behavior was higher for time 1 compared to time 2, problem behavior was higher for time 2 compared to time3, and problem behavior was higher for time 3 compared to time 4 ; resp. $F(1, 163) = 357.22, p < .001, \eta_p^2 = .69; F(1, 163) = 142.17, p < .001, \eta_p^2 = .47, F(1, 163) = 37.81, p < .001, \eta_p^2 = .19$.
 
@@ -366,9 +365,9 @@ The assumption of homogeneous variances of the two groups on the baseline measur
 **(ii.)**
 
 ```{r, echo=FALSE, fig.align="center",  out.width = '50%'}
-knitr::include_graphics(c("picts/spss4_output15.png", 
+knitr::include_graphics(c("picts/spss4_output15.png",
                           "picts/spss4_output16.png",
-                          "picts/spss4_output17.png", 
+                          "picts/spss4_output17.png",
                           "picts/spss4_output18.png"))
 ```
 

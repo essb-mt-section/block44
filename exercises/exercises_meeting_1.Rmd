@@ -20,12 +20,6 @@ output:
 
 Literature: Field (5th ed, 2018) Chapter. 2 & 3, Simmons, Nelson, & Simonsohn (2011)
 
-If you use the old 4th edition of the textbook, please find the corresponding chapter numbers in this table:
-
-| **4th** edition        | **5th** edition                     |
-| ---------------------- | ----------------------------------- |
-| Chapter 2              | Chapter 2 & 3                       |
-
 
 \newpage
 
@@ -74,6 +68,7 @@ Use the table below for the intermediate calculations:
 Mean $\overline{x} =\frac1n \sum x_i = \frac{18+16+18+24}{4}=19$
 
 \newpage
+
 1. The sums of squares is $$SS = \sum(x_i-\overline{x})^2$$
 2. The variance is the sum of squared errors divided by the degrees of freedom $(df=N -1)$:
 $$s^2= \frac{\sum(x_i-\overline{x})^2}{N-1}$$
@@ -146,7 +141,7 @@ What recommendations do Simmons, Nelson, and Simonsohn (2011) have for (psycholo
 
 # Answers
 
-## Chapter 2 & 3 
+## Chapter 2 & 3
 
 
 **Answer 1A**
@@ -161,19 +156,19 @@ $$\sigma_{\overline{X}}=\frac{s}{\sqrt{N}}=\frac{61.27}{\sqrt{11}}=18.47$$
 * If we have a **large sample size**, we know from the central limit theorem that sampling distributions will be normally distributed. In this case we use simply the $z_{1-p \over 2} = z_{0.025} = \pm 1.96$.
 * If we have a **small sample size**, we are not sure about normality and are more conservative. That is, we use instead $t_{n-1}$.
 
-But what is small and what is large? Unfortunately, different textbooks make here different suggestions. E.g Field $5^{th}$ edition says that sample sizes larger 30 can be considered as large. Other textbooks or older Field editions use here different cutoff criteria, e.g. larger 60. 
+But what is small and what is large? Unfortunately, different textbooks make here different suggestions. E.g Field $5^{th}$ edition says that sample sizes larger 30 can be considered as large. Other textbooks or older Field editions use here different cutoff criteria, e.g. larger 60.
 
 With $n=11$, it's clearly a small sample size and we use $t$-values. To compute the margin of error for the mean, we need to find the appropriate value of $t$. To do so, we calulate the degrees of freedom $df=N-1$. With 11 data points the degrees of freedom is $df=10$. For a 95% confidence interval, we look up the value in the column labbeled ``Two-Tailed Test'', '0.05' in the table of the critical values of the $t$-distribution (see the Appendix of the Field book). The corresponding value is $t=2.23$
 
 The confidence intervals ($CI$) are therefore:
 
-* Lower bounder of the $CI = \overline{X}- (2.23 \times SE) = 96.64-(2.23\times 18.47) = 55.45$\footnote{Please note, your results might not be exactly the same. The results in the 
+* Lower bounder of the $CI = \overline{X}- (2.23 \times SE) = 96.64-(2.23\times 18.47) = 55.45$\footnote{Please note, your results might not be exactly the same. The results in the
 exercises might deviate slightly ($\pm0.2$) due to differences in the rounding and the precision of the underlying calculations.}
 
 * Upper bounder of the $CI = \overline{X}+ (2.23 \times SE) = 96.64+(2.23\times 18.47) = 137.83$
 
 
-\newpage 
+\newpage
 
 **Answer  1B**
 
