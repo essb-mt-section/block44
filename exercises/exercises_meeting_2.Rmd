@@ -125,7 +125,7 @@ Reflect on the apparent contrast between the value of $R^2$ and the non-signific
 
 In the two columns on the following page you find the outcomes of two different simple regression analyses: the first column shows the results of the regression analysis for predicting $Y_3$ from $X_3$; the second column shows the results of a different regression analysis for predicting $Y_4$ from $X_4$.
 
-For each analysis you see on the next page four types of results:
+For each analysis you see on the next page four types of results\footnote{Sorry, the table output is difficult to read in this document}:
 
 1. a scatterplot depicting the individual scores on resp. $X_3$ and $Y_3$, and $X_4$ and $Y_4$;
 2. a table with regression coefficients;
@@ -142,7 +142,7 @@ Which of both regression equations describes the general pattern of the observed
 Describe what an outlier is according to Field, and name two ways to identify outliers in regression analysis.
 
 **(3D)**
-For both regression models, consider (3): the table with “casewise diagnostics” that give information about the residuals in the sample. First, write down the case numbers in each scatterplot an indicate for each case its residual.
+For both regression models, consider (3): the table below with “casewise diagnostics” that give information about the residuals in the sample. First, write down the case numbers in each scatterplot an indicate for each case its residual.
 
 **(3E)**
 What is the difference between unstandardized and standardized residuals? What is the advantage of standardized residuals?
@@ -399,7 +399,7 @@ R^2 &= \frac{SS_\text{model}}{SS_\text{total}}  \quad\text{or}\quad R^2 = \frac{
 
 **Answer 2G**
 
-Neither the general hypothesis, nor the specific hypotheses are rejected.
+Neither the general null hypothesis, nor the specific null hypotheses are rejected.
 
 
 **Answer 2H**
@@ -443,7 +443,7 @@ a deviant influential value.
 
 **Answer 3D**
 
-Use resp. the $Y_3$ and $Y_4$ scores to fill in the casenumbers. NB. The outlier in
+Use resp. the $Y_3$ and $Y_4$ scores to fill in the casenumbers. Note, the outlier in
 the first scatterplot is case number 7 and the outlier in the second scatterplot is
 case number 11.
 
@@ -486,7 +486,9 @@ For the prediction of $Y_4$ from $X_4$ case number 11 is the most influential po
 
 You can also consider more specific measures of influence that assess for each case how the regression coefficient is changed by including that case. Columns `DFB0` and `DFB1` indicate the difference in the regression coefficients $b_0$ and $b_1$ between the model for the complete sample and the model when a particular case is deleted. `DFF` indicates the difference between the current predicted value for a particular case and the predicted value for this case based on the model based on the rest of the cases.
 
-From columns `DFB0` and `DFB1` it is clear that in the model that predicts $X_3$ from $Y_3$, case number 7 is the most influential, with the regression coefficient ($b_1$) changing from 0.50 to $(0.50 - 0.15) = 0.35$ after case number 7 is deleted. In the model that predicts $X_4$ from $Y_4$, case number 11 is by far the most influential, with the regression coefficient ($b_1$) changing from 0.499 to $(0.499 - 0.453) = 0.046$ after case number 11 is deleted.
+From columns `DFB0` and `DFB1` it is clear that in the model that predicts $X_3$ from $Y_3$, case number 7 is the most influential, with the regression coefficient ($b_1$) changing from 0.50 to $(0.50 - 0.15) = 0.35$ after case number 7 is deleted (see unstandardized coefficient in table 2 and last column of row 7 in table 4). 
+
+In the model that predicts $X_4$ from $Y_4$, case number 11 is by far the most influential, with the regression coefficient ($b_1$) changing from 0.499 to $(0.499 - 0.453) = 0.046$ after case number 11 is deleted.
 
 Note that the values `DFB0` and `DFB1` are dependent on the unit of measurement of all variables. For instance, if the outcome ranges from 1 to 100 a `DFB1` of .3 will be considered small, but large if the outcome varies from 0 to 1.There SPSS also produces standardized version of the `DFB0` and `DFB1` values.
 
@@ -503,7 +505,7 @@ a) a typing error in the data entry (this might be something you can correct e.g
 b) the case is not really part of the population from which we intended to sample (for instance in a sample of patients suffering from anxiety complaints, some patients also suffer from psychosis), in that case the outlier can be deleted without loss of generalizability,
 c) the case is part of the target population but with a rather extreme score pattern. To this latter problem suggested solutions are normalizing variable transformations, or manually change the scores on the variables for the outlying cases so that they are deviant, but not as deviant as before, or simply remove the case from the analysis. Note that any transformations, changes of scores, and deletions are reported in the Results section together with a rationale.
 
-
+\newpage
 
 ## Regression and multicollinearity
 
@@ -554,7 +556,7 @@ If, for instance, two predictors are highly correlated, then omit one on theoret
 
 $\text{salary} = -86.26 + 0.76\,\text{intelligence} + 2.79\,\text{years as a model} +.01\,\text{attractiveness}$
 
-\newpage
+
 **Answer 4H**
 
 $R^2$  was .18 and equals .23 for the current analysis. The previous analysis included the predictor `age`, whereas the current analysis replaced this predictor with `intelligence.` Although both predictors have the same correlation with the outcome variable ($r = 0.397$). Intelligence has a larger unique contribution to explaining the variance in salary, since it has lower correlations with the other predictors in the model. This is reflected in a higher value of $R^2$  for the
@@ -582,7 +584,6 @@ Multicollinearity poses no problem for the current analysis
 
 A model’s salary was predicted from her intelligence (IQ), number of years as a model, and attractiveness (%) using multiple regression analysis. Overall, the model accounts for 23.1% of the variance in salaries and is a significant fit of the data ($F(3,227) = 22.74, p < .001$). Intelligence is a significant predictor of salary ($t(227) = 5.88, p < .001$), where controlling for the other predictors in the model, an increase in intelligence was associated with an increase in salary ($b = 0.76$). Furthermore, number of years as a model is a significant predictor of salary ($t(227) = 4.58, p < .01$), where controlling for the other predictors in the model, an increase in number of years as a model was associated with a increase in salary ($b = 2.79$). Controlling for the other predictors in the model, attractiveness did not seem to predict salary ($t(227) = .05$, ns).
 
-\newpage
 
 ## Assumptions in regression
 
