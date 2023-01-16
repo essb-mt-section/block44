@@ -115,12 +115,12 @@ or
 
 **Answer 1C**
 
-Overall, the model accounted for 7.6% of the variance in change in hygiene and is a significant fit of the data ($F(3,119) = 3.27, p = .024$).
+Overall, the model accounted for 7.6% of the variance in change in hygiene and is a significant fit of the data, $F(3,119) = 3.27, p = .024$.
 
 
 **Answer 1D**
 
-$\text{change in hygiene} = -.554 -.412\,\text{crusty} + .028\,\text{metaller} - .410\,\text{indie kid}$
+$\text{\sc change in hygiene} = -.554 -.412\cdot\text{\sc crusty} + .028\cdot\text{\sc metaller} - .410\cdot\text{\sc indie kid}$
 
 
 **Answer 1E**

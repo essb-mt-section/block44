@@ -212,12 +212,14 @@ Compute the square of the correlation between $Y$ and $X3$ and give an interpret
 **(3D)**
 In this exercise we are looking at the explained variance of the criterion $Y$ by all predictors in a regression equation, as well as the unique contribution by each predictor separately.
 
-A way to display explained variance in multiple regresion analysis is by drawing a **Venn-diagram**, where each variable is depicted with a circle and the proportion explained variance is displayed by the amount of overlap between two circles. The total amount of explained variance of the criterion $Y$ can be read off the Venn-diagram by looking at the part of the circle of $Y$ that overlaps with the predictors.
+A way to display explained variance in multiple regression analysis is by drawing a **Venn-diagram**, where each variable is depicted with a circle and the proportion explained variance is displayed by the amount of overlap between two circles. The total amount of explained variance of the criterion $Y$ can be read off the Venn-diagram by looking at the part of the circle of $Y$ that overlaps with the predictors.
 
-Now, draw two Venn diagrams:
+Draw two Venn diagrams\footnote{Just roughly sketch the diagrams using paper and pencil. You may also use the following website to draw Venn-diagrams:
+\url{https://lindemann.shinyapps.io/venndiagram/}} that depict $\ldots$
 
-1. Depicting the relations between Y, X1, and X2; and
-2. Depicting the relations between Y, X1, and X3.
+
+1. the relations between Y, X1, and X2
+2. the relations between Y, X1, and X3.
 
 
 
@@ -255,7 +257,11 @@ predicted `child aggression` expressed as standardized score (z-score) for an in
 * `diet`: $z = 0$
 
 equals:
-$$z_\text{child aggression} = 2 \times 0.177 -0.084 - 0.152 + 0.032 = .15$$
+\begin{align*}
+z_\text{child aggression} & = 0.177\times 2 \;+\; 0.084\times -1 \;+\; 0.152\times -1 \;+\; 0.032\times 1\;-\; 0.109\times 0 \\
+&= 0.354 - 0.084 - 0.152 + 0.032 = .15
+\end{align*}
+
 Thus, a child with the above predictor values, will have a `predicted aggression` that is .15 times the
 standard deviation above the mean.
 
