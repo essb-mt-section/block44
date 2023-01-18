@@ -104,7 +104,7 @@ knitr::include_graphics("picts/meeting4_figure1.jpg")
 
 **Answer 1B**
 
-* $H_0: \beta_\text{no affiliation} = \beta_\text{crusty} = \beta_\text{metaller}  = \beta_\text{indie kid} = 0$
+* $H_0: \beta_\text{crusty} = \beta_\text{metaller}  = \beta_\text{indie kid} = 0$
 * $H_\text{a}: \text{not } H_0$
 
 or

@@ -405,8 +405,7 @@ significant improvement.
 
 **Answer 3E**
 
-The continent(s) with significant regression weights for their dummy variables: that
-is, Asia.
+The continent with significant regression weight and the largest $\beta$-coefficient for their dummy variables: that is, Asia.
 
 **Answer 3F**
 
