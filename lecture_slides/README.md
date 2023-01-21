@@ -10,8 +10,7 @@ To generate slides, `knitr` rmd-files of the slides using `xaringan` (see [xarin
 
 PDFs can be generated with `xaringanBuilder` (see [here](https://jhelvy.github.io/xaringanBuilder/)).
 
-* Install `xaringanBuilder`
-  * `remotes::install_github("jhelvy/xaringanBuilder", dependencies = TRUE)`
+* Install `renderthis` package
 * generate PDF
-  * `xaringanBuilder::build_pdf('LECTURE_SLIDES.Rmd')`
+  * `renderthis::build_pdf('LECTURE_SLIDES.Rmd')`
 
