@@ -164,7 +164,7 @@ class: small
 * .emph[Simple]: Compares the mean of each level to the mean of a specified level. This type of contrast is useful when there is a control group. You can choose the first or last category as the reference.
 * .emph[Repeated]: Compares the mean of each level (except the last) to the mean of the subsequent level.
 * .emph[Deviation]: Compares the mean of each level (except a reference category) to the mean of all of the levels (grand mean). The levels of the factor can be in any order. 
-* .emph[Helmert]: Compares the mean of each level of the factor (except the last) to the mean of subsequent levels.
+* .emph[Helmert]: Compares the mean of each level of the factor (except the last) to the mean of all subsequent levels.
 
 --
   * .emph2[Reverse Helmert]  or .emph2[Difference]: Compares the mean of each level (except the first) to the mean of previous levels.
