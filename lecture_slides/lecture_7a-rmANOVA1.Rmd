@@ -58,7 +58,7 @@ add_lines <- function(data, subjects=NA, lwd=1.5) { # for why_rm_anova
     d = data
   else
     d = filter(data, Subject %in% subjects)
-  geom_line(d, mapping = aes(group = Subject, color = Subject), lwd=lwd)
+    geom_line(d, mapping = aes(group = Subject, color = Subject), linewidth=lwd)
 }
 
 add_vrange <- function(x, y1, y2, gap=0, point_scale=1,
@@ -69,7 +69,7 @@ add_vrange <- function(x, y1, y2, gap=0, point_scale=1,
 
   if (point_scale==0) {
     annotate("segment", x = x, xend = x, y = ymin,  yend = ymax,
-             colour = colour, size=lwd, alpha=alpha)
+             colour = colour, linewidth=lwd, alpha=alpha)
   } else {
     annotate("pointrange", x = x, y = mean(c(y1, y2)),
              ymin = ymin,  ymax = ymax,
@@ -87,7 +87,7 @@ add_hrange <- function(y, x1, x2, gap=0, point_scale=1,
 
   if (point_scale==0) {
     annotate("segment", x = xmin, xend = xmax, y = y,  yend = y,
-             colour = colour, size=lwd, alpha=alpha)
+             colour = colour, linewidth=lwd, alpha=alpha)
   } else {
     annotate("pointrange", y = y, x = mean(c(x1, x2)),
              xmin = xmin,  xmax = xmax,
@@ -249,7 +249,7 @@ m = why_data %>%
   group_by(Condition) %>% 
   summarise(RT = mean(RT)) %>%
   mutate(Subject="mean")
-plt + add_lines(why_data, lwd=0.5) + geom_line(m,  color = "black", mapping = aes(group = Subject), lwd=2) 
+plt + add_lines(why_data, lwd=0.5) + geom_line(m,  color = "black", mapping = aes(group = Subject), linewidth=2) 
 ```
 ]
 
@@ -276,7 +276,7 @@ layout: false
 ```{r echo=FALSE, fig.align="center", fig.width=4.7, fig.height=4, out.width = '100%'}
 plt = why_rm_anova_plot(why_data, size=2) +
   geom_hline(yintercept=mean(m$RT)) +  
-  geom_line(m,  color = "black", mapping = aes(group = Subject), lwd=1) 
+  geom_line(m,  color = "black", mapping = aes(group = Subject), linewidth=1) 
 plt
 ```
 ]
@@ -344,7 +344,7 @@ Subject pattern follows mean pattern:
 ```{r echo=FALSE, fig.align="center", fig.width=4.7, fig.height=4, out.width = '100%'}
 sdf = filter(why_data, Subject==9) # subject df
 mm = m %>% mutate(RT = RT - mean(RT) + mean(sdf$RT) ) 
-plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
+plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), linewidth=1) +
   add_lines(why_data, subject=9)
 ```
 ]
@@ -354,7 +354,7 @@ plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
 
 .pull-left[
 ```{r echo=FALSE, fig.align="center", fig.width=4.7, fig.height=4, out.width = '100%'}
-plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
+plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), linewidth=1) +
   add_lines(why_data, subject=9) +
   add_vrange(1, sdf$RT[1], mm$RT[1], alpha=1, colour="red", point_scale=0) +
   add_vrange(2, sdf$RT[2], mm$RT[2], alpha=1, colour="red", point_scale=0) +
@@ -387,7 +387,7 @@ Subject pattern does **not** follows mean pattern:
 ```{r echo=FALSE, fig.align="center", fig.width=4.7, fig.height=4, out.width = '100%'}
 sdf = filter(why_data, Subject==4) # subject df
 mm = m %>% mutate(RT = RT - mean(RT) + mean(sdf$RT) ) 
-plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
+plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), linewidth=1) +
   add_lines(why_data, subject=4)
 ```
 ]
@@ -397,7 +397,7 @@ plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
 
 .pull-left[
 ```{r echo=FALSE, fig.align="center", fig.width=4.7, fig.height=4, out.width = '100%'}
-plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), lwd=1) +
+plt + geom_line(mm,  color = "grey", mapping = aes(group = Subject), linewidth=1) +
   add_vrange(1, sdf$RT[1], mm$RT[1], alpha=1, colour="red", point_scale=0) +
   add_vrange(2, sdf$RT[2], mm$RT[2], alpha=1, colour="red", point_scale=0) +
   add_vrange(3, sdf$RT[3], mm$RT[3], alpha=1, colour="red", point_scale=0) +
@@ -554,7 +554,9 @@ class:small
 # RM-ANOVA: Sum of Squares
 
 .pull-left[
-`r image("incl/ss_within_anova.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/ss_within_anova.png")
+```
 ]
 
 .pull-right-clear[
@@ -570,7 +572,9 @@ class:small
 class:small
 # RM-ANOVA: Sum of Squares
 .pull-left[
-`r image("incl/ss_within_anova.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/ss_within_anova.png")
+```
 ]
 
 .pull-right-clear[
@@ -597,7 +601,9 @@ class: small
 ]]
 
 .pull-right-clear[
-`r image("incl/ss_within_anova.png", width="60%")`
+```{r, echo=FALSE, fig.align="center", out.width = '60%'}
+knitr::include_graphics("incl/ss_within_anova.png")
+```
 ]
 
 `r vspace(2)`
@@ -643,7 +649,9 @@ class: small
 ]]
 
 .pull-right-clear[
-`r image("incl/ss_within_anova.png", width="60%")`
+```{r, echo=FALSE, fig.align="center", out.width = '60%'}
+knitr::include_graphics("incl/ss_within_anova.png")
+```
 ]
 `r vspace(1)`
 ### $SS_\text{model}$
@@ -663,7 +671,9 @@ layout: true
 class:small
 # RM-ANOVA: Sum of Squares
 .pull-left[
-`r image("incl/ss_within_anova.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/ss_within_anova.png")
+```
 ]
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (38) -->

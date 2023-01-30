@@ -97,7 +97,9 @@ class: middle, center, inverse
 class: small
 # SPSS Output: Mauchly's Test of Sphericity
 
-`r image("incl/rm_anova_mauchly.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_mauchly.png")
+```
 
 .pull-left[
 * Main effect *Drink* 
@@ -116,21 +118,25 @@ class: small
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (8) -->
 ---
 class: center, middle
-`r image("incl/rm_anova_results0.png", width="75%")`
-
+```{r, echo=FALSE, fig.align="center", out.width = '75%'}
+knitr::include_graphics("incl/rm_anova_results0.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (9) -->
 ---
 class: center, middle
-`r image("incl/rm_anova_results1.png", width="75%")`
-
+```{r, echo=FALSE, fig.align="center", out.width = '75%'}
+knitr::include_graphics("incl/rm_anova_results1.png")
+```
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (10) -->
 ---
 class: small
 # Main Effect of Drink
 
 .pull-left[
-`r image("incl/rm_anova_results_fig1.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig1.png")
+```
 ]
 
 .pull-right-clear[
@@ -142,7 +148,9 @@ class: small
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (11) -->
 ---
 class: center, middle
-`r image("incl/rm_anova_results2.png", width="75%")`
+```{r, echo=FALSE, fig.align="center", out.width = '75%'}
+knitr::include_graphics("incl/rm_anova_results2.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (12) -->
 ---
@@ -150,7 +158,9 @@ class: small
 # Main Effect of Imagery
 
 .pull-left[
-`r image("incl/rm_anova_results_fig2.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig2.png")
+```
 ]
 .pull-right[
 * Mauchly's test indicated that the assumption of sphericity had been violated for the main effect of drink, $\chi^2(2) = 7.42, p = .02$. Therefore, degrees of freedom were corrected using Greenhouse-Geiser estimates of sphericity $(\epsilon = .75)$. 
@@ -161,7 +171,9 @@ class: small
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (13) -->
 ---
 class: center, middle
-`r image("incl/rm_anova_results3.png", width="75%")`
+```{r, echo=FALSE, fig.align="center", out.width = '75%'}
+knitr::include_graphics("incl/rm_anova_results3.png")
+```
 
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (14) -->
@@ -170,7 +182,9 @@ class: small
 # Drink $\times$ Imagery Interaction
 
 .pull-left[
-`r image("incl/rm_anova_results_fig3.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig3.png")
+```
 ]
 .pull-right[
 * Estimates of epsilon showed a mild departure from sphericity. Therefore, degrees of freedom were corrected using Huynh-Feldt estimates of sphericity $(\epsilon = .98)$.  
@@ -211,20 +225,26 @@ class: small
 ---
 # Planned Comparision
 
-`r image("incl/rm_anova_results_contrasts0.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts0.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (17) -->
 ---
 # Planned Comparision: Factor *Drink*    
 
-`r image("incl/rm_anova_results_contrasts1.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts1.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (18) -->
 ---
 class: small
 # Planned Comparision: Factor *Drink*    
 .pull-left[
-`r image("incl/rm_anova_results_fig1.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig1.png")
+```
 ]
 .pull-right[
 $$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
@@ -237,7 +257,9 @@ $$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
 ---
 # Planned Comparision: Factor *Drink*    
 
-`r image("incl/rm_anova_results_contrasts2.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts2.png")
+```
 
 
 
@@ -245,14 +267,18 @@ $$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
 ---
 # Planned Comparision: Factor *Imagery*    
 
-`r image("incl/rm_anova_results_contrasts3.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts3.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (21) -->
 ---
 class: small
 # Planned Comparision: Factor *Imagery*      
 .pull-left[
-`r image("incl/rm_anova_results_fig2.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig2.png")
+```
 ]
 .pull-right[
 $$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
@@ -266,14 +292,18 @@ $$r_\text{contrast} = \sqrt{\frac{F}{F + df_R}}$$
 ---
 # Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
 
-`r image("incl/rm_anova_results_contrasts4.png", width="80%")`
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts4.png")
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (23) -->
 ---
 class: small
 # Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
 .pull-left[
-`r image("incl/rm_anova_results_fig4.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig4.png")
+```
 ]
 .pull-right[
 * Simple contrasts revealed that the effect of negative imagery compared to neutral imagery:
@@ -285,14 +315,17 @@ class: small
 ---
 # Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
 
-`r image("incl/rm_anova_results_contrasts5.png", width="80%")`
-
+```{r, echo=FALSE, fig.align="center", out.width = '80%'}
+knitr::include_graphics("incl/rm_anova_results_contrasts5.png")
+```
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - (25) -->
 ---
 class: small
 # Planned Comparision: Interaction *Drink* $\times$  *Imagery*    
 .pull-left[
-`r image("incl/rm_anova_results_fig5.png", width="100%")`
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/rm_anova_results_fig5.png")
+```
 ]
 .pull-right[
 * Simple contrasts revealed that the effect of negative imagery compared to neutral imagery:

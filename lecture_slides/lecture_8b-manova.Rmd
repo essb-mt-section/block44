@@ -212,7 +212,7 @@ class: small
   * Model: .emph2[Systematic variance] explained by factors $(IV_1, IV_2, \ldots)$
   * Residual: .emph2[Unsystematic variance], Error Variance
 ]
-.right-column-clear[
+.right-column[
 ```{r, echo=FALSE, fig.align="center", out.width = '100%'}
 knitr::include_graphics("incl/ss_manova.png")
 ```
@@ -527,14 +527,17 @@ class: middle, center, inverse
 ---
 # Between Subject Effect: Multiple Univariate ANOVAs
 
-`r image("incl/manova_between_subject_effects.png", width="70%")`
-
+```{r, echo=FALSE, fig.align="center", out.width = '70%'}
+knitr::include_graphics("incl/manova_between_subject_effects.png")
+```
 
 ---
 class: small
 # MANOVA test statistics
 
-`r image("incl/manova_tests.png", width="70%")`
+```{r, echo=FALSE, fig.align="center", out.width = '70%'}
+knitr::include_graphics("incl/manova_tests.png")
+```
 
 "Using Wilks' statistic, there was a significant effect of therapy on the 
 number of obsessive thoughts and behaviours, $\Lambda = 0.70$, 

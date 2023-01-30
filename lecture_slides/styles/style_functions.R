@@ -35,24 +35,24 @@ posbox <- function(width, top, left, opacity=NA){
 }
 end_posbox <- function(){paste0("\n</div>\n")}
 
-image <- function(image, width=NA, height=NA, top=NA, left=NA, opacity=NA){
-  # allows positioning of images
-
-  rtn = ""
-  abs_pos = !is.na(top) | !is.na(left)
-  if (abs_pos)
-    rtn = paste0(posbox(width = width, top=top, left=left))
-  rtn = paste0(rtn, '<img src="', image, '" ')
-  if (!is.na(width))
-    rtn = paste0(rtn, 'width="', .px(width), '" ')
-  if (!is.na(height))
-    rtn = paste0(rtn, 'height="', .px(height), '" ')
-  rtn = paste0(rtn, .html_style(list(display="block", margin="auto",
-                                     opacity=opacity)), ">")
-  if (abs_pos)
-    rtn = paste0(rtn, end_posbox())
-  return(rtn)
-  }
+# image <- function(image, width=NA, height=NA, top=NA, left=NA, opacity=NA){
+#   # allows positioning of images
+#
+#   rtn = ""
+#   abs_pos = !is.na(top) | !is.na(left)
+#   if (abs_pos)
+#     rtn = paste0(posbox(width = width, top=top, left=left))
+#   rtn = paste0(rtn, '<img src="', image, '" ')
+#   if (!is.na(width))
+#     rtn = paste0(rtn, 'width="', .px(width), '" ')
+#   if (!is.na(height))
+#     rtn = paste0(rtn, 'height="', .px(height), '" ')
+#   rtn = paste0(rtn, .html_style(list(display="block", margin="auto",
+#                                      opacity=opacity)), ">")
+#   if (abs_pos)
+#     rtn = paste0(rtn, end_posbox())
+#   return(rtn)
+#   }
 
 
 ## make slides in Rmd source

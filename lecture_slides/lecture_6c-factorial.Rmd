@@ -49,7 +49,7 @@ anova_puzzle_data<- function() {
 anova_puzzle_fig <- function(df) {
   # anova_puzzle_fig(anova_puzzle_data())
   fig = ggplot(df, aes(x=factor_a, y=y, group=factor_b)) +
-    geom_line(aes(color=factor_b), size=1)+
+    geom_line(aes(color=factor_b), linewidth=1)+
     geom_point(aes(color=factor_b), size=3) +
     theme_linedraw() +
     theme(axis.text = element_text(size = 11),
@@ -87,7 +87,7 @@ add_vrange <- function(x, y1, y2, gap=0, point_scale=1,
 
   if (point_scale==0) {
     annotate("segment", x = x, xend = x, y = ymin,  yend = ymax,
-             colour = colour, size=lwd, alpha=alpha)
+             colour = colour, linewidth=lwd, alpha=alpha)
   } else {
     annotate("pointrange", x = x, y = mean(c(y1, y2)),
              ymin = ymin,  ymax = ymax,
