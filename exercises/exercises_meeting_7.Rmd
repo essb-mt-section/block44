@@ -196,15 +196,18 @@ For a significant interaction effect, we can use within subjects contrasts to co
 
 The assumption of sphericity. Sphericity refers to the equality of variances of the
 differences between various conditions of the ws-factor.
-This assumption is not relevant when the ws-factor has only two conditions, because
-in that case we have only one set of difference scores.
+
 
 **Answer 2B**
 
-“Tests of within subjects effects”
-
+This assumption is not relevant if the within subject-factor has only two conditions, because
+in that case we have only one set of difference scores.
 
 **Answer 2C**
+
+“Tests of within subjects effects”
+
+**Answer 2D**
 
 The standard follow up contrasts are in the table “Test of within-subjects
 contrasts”. NB these test use different estimates of the MSresidual based on the
@@ -212,7 +215,7 @@ variance of the difference scores for that specific combination.
 Post Hoc pairwise comparisons are also available in the table called “Pairwise
 comparisons”; these test use separate error terms as well.
 
-**Answer 2D**
+**Answer 2E**
 
 Epsilon is used to estimate the level of sphericity (homogeneity of variances of the
 difference scores). The closer it is to 1 , the more homogeneous are the variances of
@@ -221,7 +224,7 @@ conditions of the ws-factor. Huyn-Feldt is too optimistical, Greenhouse-Geisser 
 the conservative side (therefore the latter is recommended for more severe
 violations of this assumption).
 
-**Answer 2E**
+**Answer 2F**
 
 Huyn-Feldt, Greenhouse-Geisser and the lower bound. Sphericity can be tested with Mauchly’s test, but during this course we always stress not to rely solely on $p$-values, but also to take into account the effect size and data exploration. I follow the rules of thumb presented in Field, which I think apply regardless of Mauchly’s test:
 
@@ -251,7 +254,6 @@ knitr::include_graphics("picts/meeting7_solution1.png")
 
 The trend is decreasing (7; 5.2; 4.2; 3.6), but it is described best as a diminishing decrease (subsequent differences are: 1.8; 1; 0.6). This could be tested by testing a linear polynomial, but also by combing a linear and quadratic trend (via SPSS Syntax)
 
-\newpage
 
 **Answer 3C**
 
@@ -284,7 +286,7 @@ attention resulting from participating in the experiment).
 **Answer 3E**
 
 When it is a linear trend that you want to test (thus a constant decrease), you would have to run this analysis via the SPSS syntax and adjust the contrast coefficients for the unequal distances between the conditions.
-
+\newpage
 
 ## Repeated measures ANOVA, follow-up: contrasts
 
