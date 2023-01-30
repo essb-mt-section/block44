@@ -1,0 +1,48 @@
+---
+title: "Extra slides"
+subtitle: "When shall I do what kind of analysis?"
+author: Oliver Lindemann
+institute: "Erasmus Univeristy Rotterdam"
+#date: "<small>Jan 2022</small>"
+output:
+  xaringan::moon_reader:
+  lib_dir: libs
+css: [styles/eur-theme.css,  styles/eur-fonts.css ]
+self_contained: FALSE
+nature:
+  highlightStyle: github
+highlightLines: true
+countIncrementalSlides: false
+ratio: '16:9'
+editor_options:
+  chunk_output_type: console
+---
+
+```{r echo=FALSE, message=FALSE}
+library(knitr)
+options(knitr.kable.NA = "")
+```
+
+---
+class: small
+
+# When shall I do what kind of analysis?
+
+The last page in the Field book (5th ed.) depicts a decision tree and summarizes all 
+questions that need to be addressed to make a decision.
+
+Note, for this course we only look a some of the analyses in the Field book.
+
+---
+
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/field_decision_tree.png")
+```
+
+
+---
+
+```{r, echo=FALSE, fig.align="center", out.width = '100%'}
+knitr::include_graphics("incl/field_decision_tree_highlight.png")
+```
+
