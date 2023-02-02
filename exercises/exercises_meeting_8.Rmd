@@ -162,8 +162,6 @@ See table of “Tests of Within subjects contrasts”:
 
 **Answer 1D**
 
-Note: $df_\text{model}=df_\text{effect}=1$
-
 There are no differences between both groups (fearful, non-fearful) in terms of the average number of changes that were noticed by participants, $F(1,48) < 1, r = .11$. There was a strong, significant main effect of stimulus, $F(1,48) = 52.23, p < .001, r = .72$; on average the number of changes that were noticed by participants was larger when the stimulus was a spider.
 
 The was a small, but significant Group $\times$ Stimulus interaction-effect $F(1,48) = 4.78, p < .05, r = .3$; the increase of the number of changes that were noticed when the stimulus was a spider compared to a neutral stimulus, was larger for fearful participants than for non-fearful participants.
