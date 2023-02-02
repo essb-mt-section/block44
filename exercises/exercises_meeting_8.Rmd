@@ -25,7 +25,7 @@ Literature: Field (5th ed, 2018) Chapter 16: repeated measures ANOVA with one or
 
 # Chapter 15
 
-## Repeated measures ANOVA mixed design, follow-up: contrasts
+## Repeated measures ANOVA and mixed design, follow-up: contrasts
 Consider the following study by Mayer et al. (2006). To examine attention bias in phobic patients an experiment was conducted. ‘Twenty-five spider-fearful and 25 non-fearful participants were confronted with a series of pictures, in which sometimes a spider gradually appeared (…), and sometimes a neutral stimulus appeared. Participants had to indicate whenever they noticed a change in the picture’ (Mayer et al., 2006, p.1).
 
 The presumption was that spider-fearful participants would notice spider-related changes more often than neural changes, and even more so than non-fearful participants. The dependent variable was the number of changes in a picture that a participant noticed.
@@ -58,7 +58,7 @@ knitr::include_graphics("picts/meeting8_spssout1.jpg")
 \newpage
 
 
-## Repeated measures ANOVA
+## Mixed design I
 
 Consider the following example.
 
@@ -89,7 +89,7 @@ What strategy does Field recommend for interpreting/reporting the three-way inte
 
 \newpage
 
-## Repeated measures ANOVA mixed design
+## Mixed design II
 
 Example: "Text messaging is very popular among mobile phone owners, to the point that books have been published on how to write in text speak (BTW, hope u kno wat I mean by txt spk). One concern is that children may use this form of communication so much that it will hinder their ability to learn correct written English. One concerned researcher conducted an experiment in which one group of children was encouraged to send text messages on their mobile phones over a six-month period. A second group was forbidden from sending text messages for the same period. To ensure that kids in this latter group didn’t use their phones, this group was given armbands that administered painful shocks in the presence of microwaves (like those emitted from phones). There were 50 different participants: 25 were encouraged to send text messages and 25 were forbidden. The outcome was a score on a grammatical test (as a percentage) that was measured both before and after the experiment. The first independent variable was, therefore, text message use (text messagers versus controls) and the second independent variable was the time at which grammatical ability was assessed (before or after the experiment)."
 
@@ -124,7 +124,7 @@ knitr::include_graphics("picts/meeting8_spssout2.jpg")
 \newpage\appendix
 # Answers
 
-## Repeated measures ANOVA mixed design, follow-up: contrasts
+## Repeated measures ANOVA and mixed design, follow-up: contrasts
 
 **Answer 1A**
 
@@ -177,7 +177,7 @@ This means that the average number of changes that were noticed by participants 
 
 
 
-## Repeated measures ANOVA
+## Mixed design I
 
 **Answer 2A**
 
@@ -241,7 +241,7 @@ More complex designs, such as this three-way design, allow you to test more spec
 Inspect the interaction between the two ws-factors for both groups separately (see Field). Thus make an interaction plot of time vs. type of sum for the PC group and the traditional group.
 
 
-## Repeated measures ANOVA mixed design
+## Mixed design II
 
 
 **Answer 3A**
