@@ -1,3 +1,5 @@
+# install renderthis install.packages("renderthis", dependencies = TRUE)
+
 library(renderthis)
 
 for (fl in list.files(pattern = "*.Rmd")) {
