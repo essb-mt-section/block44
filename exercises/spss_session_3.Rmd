@@ -255,7 +255,7 @@ knitr::include_graphics("picts/spss3_output5.png")
 \textsl{(This table with group means on the covaiate `PRE1` and `PRE2` is added for your information)}
 
 
-**Answer 3C**
+**Answer 3D**
 
 After controlling for individual differences in reading ability, the "method of instruction" has a significant influence on reading ability ($F(2,61)=12.7, p<.001$). The effect size for the main effect of “method of instruction” is large ($\eta_p^2=.293$).
 
