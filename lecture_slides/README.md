@@ -4,13 +4,7 @@
 ## HTML presentations
 
 To generate slides, `knitr` rmd-files of the slides using `xaringan` (see [xaringan Presentations](https://bookdown.org/yihui/rmarkdown/xaringan.html)).
+* generate html
+  * `renderthis::to_html('LECTURE_SLIDES.Rmd')`
 
-
-## PDF
-
-PDFs can be generated with `xaringanBuilder` (see [here](https://jhelvy.github.io/xaringanBuilder/)).
-
-* Install `renderthis` package
-* generate PDF
-  * `renderthis::build_pdf('LECTURE_SLIDES.Rmd')`
 
